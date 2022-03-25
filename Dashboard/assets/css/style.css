@@ -44842,6 +44842,18 @@ table.table-bordered.dataTable thead tr:first-child td {
     position: relative;
 }
 
+.bg-login{
+    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/media/pexels-c%C3%A1tia-matos-1072179.jpg");
+    background-size: cover;
+    display: inline-table;
+    
+}
+
 @media screen and (max-width: 335px) {
     div.table-responsive>div.dataTables_wrapper>div.row>div[class^=col-]:last-child {
         padding-left: 0;
@@ -45155,7 +45167,7 @@ table.table-bordered.dataTable thead tr:first-child td {
     line-height: 1.5;
     color: #000;
     display: block;
-    width: 80%;
+    width: 100%;
     background: #ffffff;
     height: 44px;
     padding: 0 30px 0 20px;
@@ -45902,15 +45914,6 @@ img {
     left: 0;
     margin: 0 auto;
     text-align: center;
-}
-
-.login-img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-table;
 }
 
 .profie-img .flex-md-row img {
@@ -64360,7 +64363,6 @@ body.rtl {
 
 .container-login100 .box ul li {
     list-style: none;
-    float: left;
     padding: 7px 7px;
 }
 
