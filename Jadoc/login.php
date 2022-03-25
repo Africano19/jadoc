@@ -12,30 +12,35 @@
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../Dashboard/assets/images/brand/favicon.ico" />
 
     <!-- TITLE -->
     <title>Sash – Bootstrap 5 Admin & Dashboard Template</title>
 
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="style" href="../Dashboard/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- STYLE CSS -->
-    <link href="../assets/css/style.css" rel="stylesheet" />
-    <link href="../assets/css/dark-style.css" rel="stylesheet" />
-    <link href="../assets/css/transparent-style.css" rel="stylesheet">
-    <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+    <link href="../Dashboard/assets/css/style.css" rel="stylesheet" />
+    <link href="../Dashboard/assets/css/dark-style.css" rel="stylesheet" />
+    <link href="../Dashboard/assets/css/transparent-style.css" rel="stylesheet">
+    <link href="../Dashboard/assets/css/skin-modes.css" rel="stylesheet" />
 
     <!--- FONT-ICONS CSS -->
-    <link href="../assets/css/icons.css" rel="stylesheet" />
+    <link href="../Dashboard/assets/css/icons.css" rel="stylesheet" />
 
     <!-- COLOR SKIN CSS -->
-    <link id="theme" rel="stylesheet" type="text/css" media="all" href="../assets/colors/color1.css" />
+    <link id="theme" rel="stylesheet" type="text/css" media="all" href="../Dashboard/assets/colors/color1.css" />
 
 </head>
 
 <body class="app sidebar-mini ltr">
 
+        <!-- GLOBAL-LOADER -->
+    <div id="global-loader">
+        <img src=" Dashboard/assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!-- /GLOBAL-LOADER -->
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
@@ -67,7 +72,7 @@
                         
                         if($count > 0){
                             $_SESSION['uname'] = $uname;                  
-                            header('Location: dashboard.html');
+                            header('Location: Dashboard/dashboard.html');
                         }else{
                             
                         ?>
@@ -110,7 +115,7 @@
                 <div class="container-login100">
                     <div class="wrap-login100 p-7">
                         <form class="login100-form validate-form" method="post">
-                            <center><img src="../assets/images/brand/logo-4.png" class="header-brand-img desktop-logo" alt="logo" style="width: 65%; height: 65%;"></center>
+                            <center><img src="../Dashboard/assets/images/brand/logo-4.png" class="header-brand-img desktop-logo" alt="logo" style="width: 65%; height: 65%;"></center>
                             <br />
                             <div class="panel panel-primary">
                                 <div class="tab-menu-heading">
@@ -157,26 +162,26 @@
     <!-- BACKGROUND-IMAGE CLOSED -->
 
     <!-- JQUERY JS -->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../Dashboard/assets/js/jquery.min.js"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Dashboard/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../Dashboard/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- SHOW PASSWORD JS -->
-    <script src="../assets/js/show-password.min.js"></script>
+    <script src="../Dashboard/assets/js/show-password.min.js"></script>
 
     <!-- GENERATE OTP JS -->
-    <script src="../assets/js/generate-otp.js"></script>
+    <script src="../Dashboard/assets/js/generate-otp.js"></script>
 
     <!-- Perfect SCROLLBAR JS-->
-    <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="../Dashboard/assets/plugins/p-scroll/perfect-scrollbar.js"></script>
 
     <!-- Color Theme js -->
-    <script src="../assets/js/themeColors.js"></script>
+    <script src="../Dashboard/assets/js/themeColors.js"></script>
 
     <!-- CUSTOM JS -->
-    <script src="../assets/js/custom.js"></script>
+    <script src="../Dashboard/assets/js/custom.js"></script>
 
 </body>
 
