@@ -172,10 +172,6 @@
                                                 <a class="dropdown-item" href="profile.html">
                                                     <i class="dropdown-icon fe fe-user"></i> Profile
                                                 </a>
-                                                <a class="dropdown-item" href="email-inbox.html">
-                                                    <i class="dropdown-icon fe fe-mail"></i> Inbox
-                                                    <span class="badge bg-danger rounded-pill float-end">5</span>
-                                                </a>
                                                 <a class="dropdown-item" href="lockscreen.html">
                                                     <i class="dropdown-icon fe fe-lock"></i> Lockscreen
                                                 </a>
@@ -265,9 +261,9 @@
                                         class="side-menu__label">Organizada</span><i
                                         class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Casos</a></li>
-                                    <li><a href="alerts.html" class="slide-item"> Abertos</a></li>
-                                    <li><a href="buttons.html" class="slide-item"> Pendentes</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Organizada</a></li>
+                                    <li><a href="alerts.html" class="slide-item"> # </a></li>
+                                    <li><a href="buttons.html" class="slide-item"> # </a></li>
                                 </ul>
                             
                             </li>
@@ -277,9 +273,9 @@
                                     <span class="side-menu__label">Não Organizada</span><i
                                         class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
-                                    <li><a href="alerts.html" class="slide-item"> Ativos</a></li>
-                                    <li><a href="buttons.html" class="slide-item"> Inativos</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Não Organizada</a></li>
+                                    <li><a href="alerts.html" class="slide-item"> # </a></li>
+                                    <li><a href="buttons.html" class="slide-item"> # </a></li>
                                 </ul>
                             </li>
                             <li class="slide">
@@ -293,8 +289,15 @@
                                     <li><a href="buttons.html" class="slide-item"> Inativos</a></li>
                                 </ul>
                             </li>
-                            
-                        </ul>
+                            <li class="sub-category">
+                                <h3>GESTÃO</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">File
+                                        Manager</span><span class="badge bg-primary side-badge">4</span><i
+                                        class="angle fe fe-chevron-right hor-angle"></i></a>                        
+                            </li>
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
                                 width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
@@ -322,101 +325,68 @@
                             </div>
                         </div>
                         <!-- PAGE-HEADER END -->
-
-                        <!-- ROW-1 -->
+                        
+                        
+                        <!-- Body Stuff -->
+                        
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Casos Abertos</h6>
-                                                        <h2 class="mb-0 number-font">16</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="saleschart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="text-muted fs-12"><span class="text-secondary"><i
-                                                            class="fe fe-arrow-up-circle  text-secondary"></i> 5%</span>
-                                                    Last week</span>
-                                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                                <div class="card widgets-cards box-primary-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.06" data-thickness="6" data-bs-color="#dfcccc ">
+                                            <div class="chart-circle-value">6%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3">
+                                            <p class="mt-0">18</p>
+                                            <p class="mt-1 mb-0">Casos Abertos</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Casos Pendentes</h6>
-                                                        <h2 class="mb-0 number-font">24</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="leadschart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="text-muted fs-12"><span class="text-pink"><i
-                                                            class="fe fe-arrow-down-circle text-pink"></i> 0.75%</span>
-                                                    Last 6 days</span>
-                                            </div>
+                                </div>
+                            </div>
+                            <!-- COL END -->
+                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                                <div class="card widgets-cards box-success-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.08" data-thickness="6" data-bs-color="#ffd3d3 ">
+                                            <div class="chart-circle-value">8%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3">
+                                            <p class="mt-0">24</p>
+                                            <p class=" mt-1 mb-0">Casos Pendentes</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Aguardam Pagamento</h6>
-                                                        <h2 class="mb-0 number-font">8</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="profitchart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="text-muted fs-12"><span class="text-green"><i
-                                                            class="fe fe-arrow-up-circle text-green"></i> 0.9%</span>
-                                                    Last 9 days</span>
-                                            </div>
+                                </div>
+                            </div>
+                            <!-- COL END -->
+                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                                <div class="card widgets-cards box-warning-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.02" data-thickness="6" data-bs-color="#ffa4a4 ">
+                                            <div class="chart-circle-value ">2%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3">
+                                            <p class="mt-0">8</p>
+                                            <p class=" mt-1 mb-0">Pendentes Pagamentos</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3">
-                                        <div class="card overflow-hidden">
-                                            <div class="card-body">
-                                                <div class="d-flex">
-                                                    <div class="mt-2">
-                                                        <h6 class="">Casos Fechados</h6>
-                                                        <h2 class="mb-0 number-font">256</h2>
-                                                    </div>
-                                                    <div class="ms-auto">
-                                                        <div class="chart-wrapper mt-1">
-                                                            <canvas id="costchart"
-                                                                class="h-8 w-9 chart-dropshadow"></canvas>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <span class="text-muted fs-12"><span class="text-warning"><i
-                                                            class="fe fe-arrow-up-circle text-warning"></i> 0.6%</span>
-                                                    Last year</span>
-                                            </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                                <div class="card widgets-cards box-danger-shadow">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.83" data-thickness="6" data-bs-color="#d17878 ">
+                                            <div class="chart-circle-value">83%</div>
+                                        </div>
+                                        <div class="wrp text-wrapper p-3">
+                                            <p class="mt-0">247</p>
+                                            <p class=" mt-1 mb-0">Concluidos</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- ROW-1 END -->
 
-                        
+                        <!-- !Body Stuff -->
 
         <!-- FOOTER -->
         <footer class="footer">
