@@ -35,21 +35,21 @@
 </head>
 
 <body class="app sidebar-mini ltr">
-    
-    
-                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                      </symbol>
-                      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-                      </symbol>
-                      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </symbol>
-                    </svg>
-    
-                <?php
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+    <?php
                 include "config.php";
 
                 if(isset($_POST['but_submit'])){
@@ -71,16 +71,20 @@
                         }else{
                             
                         ?>
-                        <div class="text-wrap">
-                                <div class="alert alert-danger" style=" z-index: 2;">
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button>
-                                        <span class=""><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 24 24"><path fill="#f07f8f" d="M20.05713,22H3.94287A3.02288,3.02288,0,0,1,1.3252,17.46631L9.38232,3.51123a3.02272,3.02272,0,0,1,5.23536,0L22.6748,17.46631A3.02288,3.02288,0,0,1,20.05713,22Z"/><circle cx="12" cy="17" r="1" fill="#e62a45"/><path fill="#e62a45" d="M12,14a1,1,0,0,1-1-1V9a1,1,0,0,1,2,0v4A1,1,0,0,1,12,14Z"/></svg></span>
-                                        <strong>Alerta</strong>
-                                        <hr class="message-inner-separator">
-                                        <p>Utilizador ou Password não se encontram válidos!</p>
-                            </div>
-                        </div>                     
-                        <?php
+    <div class="text-wrap">
+        <div class="alert alert-danger" style=" z-index: 2;">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-hidden="true">×</button>
+            <span class=""><svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 24 24">
+                    <path fill="#f07f8f" d="M20.05713,22H3.94287A3.02288,3.02288,0,0,1,1.3252,17.46631L9.38232,3.51123a3.02272,3.02272,0,0,1,5.23536,0L22.6748,17.46631A3.02288,3.02288,0,0,1,20.05713,22Z" />
+                    <circle cx="12" cy="17" r="1" fill="#e62a45" />
+                    <path fill="#e62a45" d="M12,14a1,1,0,0,1-1-1V9a1,1,0,0,1,2,0v4A1,1,0,0,1,12,14Z" />
+                </svg></span>
+            <strong>Alerta</strong>
+            <hr class="message-inner-separator">
+            <p>Utilizador ou Password não se encontram válidos!</p>
+        </div>
+    </div>
+    <?php
                             
                         }
 
@@ -88,8 +92,8 @@
 
                 }
             ?>
-    
-    
+
+
     <!-- BACKGROUND-IMAGE -->
     <div class="bg-login">
 
@@ -105,9 +109,9 @@
 
                 <div class="container-login100">
                     <div class="wrap-login100 p-7">
-                        <form class="login100-form validate-form" method="post" >
+                        <form class="login100-form validate-form" method="post">
                             <center><img src="../assets/images/brand/logo-4.png" class="header-brand-img desktop-logo" alt="logo" style="width: 65%; height: 65%;"></center>
-                            <br/>
+                            <br />
                             <div class="panel panel-primary">
                                 <div class="tab-menu-heading">
                                 </div>
@@ -129,11 +133,11 @@
                                             <div class="text-begin pt-4">
                                                 <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Esqueci-me da Password</a></p>
                                             </div>
-                                             <div class="container-login100-form-btn">
-                                                <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id= "but_submit" style="width: 100%;"/>
-                                                 </div>
+                                            <div class="container-login100-form-btn">
+                                                <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id="but_submit" style="width: 100%;" />
+                                            </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -145,10 +149,10 @@
             </div>
         </div>
         <!-- End PAGE -->
-        
 
-        
-        
+
+
+
     </div>
     <!-- BACKGROUND-IMAGE CLOSED -->
 
