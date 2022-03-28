@@ -16,7 +16,7 @@
 
     <!-- TITLE -->
     <title>JA DOC - DASHBOARD</title>
-
+    <?php session_start();?>
     <!-- BOOTSTRAP CSS -->
     <link id="style" href=" assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -43,6 +43,29 @@
     <!-- PAGE -->
     <div class="page">
         <div class="page-main">
+
+
+                                <?php
+                                Include('../config.php');
+                                $uname= $_SESSION["uname"];
+                                $sql= "select  count(*) as cntUser from users where username='".$uname."'";
+                                $result = mysqli_query($con,$sql);
+                                $row = mysqli_fetch_array($result);
+                                $count = $row['cntUser'];
+                                if($count > 0){
+                                while($dados = mysqli_fetch_array($result)){
+                                $user=$dados['username'];  
+                                }
+                                }
+                                else
+                                {
+                                echo "<script>
+                                    alert('Login não foi efetuado! Por favor faça-o primeiro!')
+                                </script>";
+                                $url = '../login.php';
+		                        echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+                                }
+                                ?>
 
             <!-- app-Header -->
             <div class="app-header header sticky">
@@ -138,7 +161,7 @@
                                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                                 <div class="drop-heading">
                                                     <div class="text-center">
-                                                        <h5 class="text-dark mb-0 fs-14 fw-semibold">JaDOC</h5>
+                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".$uname."</h5>"; ?>
                                                         <small class="text-muted">Admin</small>
                                                     </div>
                                                 </div>
@@ -441,4 +464,6 @@
                     <!-- CUSTOM JS -->
                     <script src=" assets/js/custom.js"></script>
 
-</body></html>
+</body>
+
+</html>
