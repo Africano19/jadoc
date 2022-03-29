@@ -43,25 +43,36 @@
     <!-- PAGE -->
     <div class="page">
         <div class="page-main">
+            <?php
+                Include('../config.php');
+                $id= $_SESSION["ID"];
+                $sql= "SELECT * FROM users where ID_User= '".$id."'";
+                $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
+                $num_rows= mysqli_num_rows($result);
+                if($num_rows>0)
+                {
+                    while($dados = mysqli_fetch_array($result)){
+                        $user=$dados['Name'];
+                        $type=$dados['Tipo_User'];    
+                    }              
+                    
+                    
+                    if(type==3){
+                        echo '<script type="text/JavaScript"> 
+                         document.getElementById("Servicos").style.display = "none";
+                         </script>';
+                    }
+                    
+                    
+                }
+                else
+                {
+                    echo "<script>alert('Área Reservada!! Efetue um login primeiro!')</script>";
+                    $url = '../login.php';
+                    echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';  
+                }  
 
-
-                                <?php
-                                Include('../config.php');
-                                $id= $_SESSION["ID"];
-                                $sql= "SELECT * FROM users where ID_User= '".$id."'";
-                                $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
-                                $num_rows= mysqli_num_rows($result);
-                                if($num_rows>0)
-                                {
-                                while($dados = mysqli_fetch_array($result)){
-                                $user=$dados['Name'];
-                                }
-                                }
-                                else
-                                {
-                                    echo "<script>alert('Área Reservada!! Efetue um login primeiro!')</script>";
-                                }
-                                ?>
+                ?>
 
             <!-- app-Header -->
             <div class="app-header header sticky">
@@ -198,6 +209,8 @@
                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                             </svg></div>
+                        
+                        
                         <ul class="side-menu">
                             <li class="sub-category">
                                 <h3>Main</h3>
@@ -211,10 +224,16 @@
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.html"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                             </li>
-                            <li class="sub-category">
+
+                        </ul>
+
+
+                        <ul class="side-menu" id="Servicos">
+
+                            <li class="sub-category" id="title_service">
                                 <h3>SERVIÇOS</h3>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="service1">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-slack"></i><span class="side-menu__label">Casos</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
                                     <li class="side-menu-label1"><a href="javascript:void(0)">Casos</a></li>
@@ -225,7 +244,7 @@
                                 </ul>
 
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="service2">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
@@ -235,14 +254,19 @@
                                 </ul>
                             </li>
 
-                            <li class="sub-category">
+                        </ul>
+
+
+                        <ul class="side-menu" id="Contabilidade">
+
+                            <li class="sub-category" id="title_contab">
                                 <h3>CONTABILIDADE</h3>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="contab1">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-bar-chart-fill"></i>
                                     <span class="side-menu__label">Mapas</span></a>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="contab2">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive-fill"></i><span class="side-menu__label">Organizada</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
                                     <li class="side-menu-label1"><a href="javascript:void(0)">Organizada</a></li>
@@ -251,7 +275,7 @@
                                 </ul>
 
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="contab3">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive"></i>
                                     <span class="side-menu__label">Não Organizada</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
@@ -260,7 +284,7 @@
                                     <li><a href="#" class="slide-item"> # </a></li>
                                 </ul>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="contab4">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
@@ -269,19 +293,27 @@
                                     <li><a href="#" class="slide-item"> Inativos</a></li>
                                 </ul>
                             </li>
-                            <li class="sub-category">
+
+                        </ul>
+
+                        <ul class="side-menu" id="Gestao">
+                            <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="adm1">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <li class="slide">
+                            <li class="slide" id="adm2">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
-                                </svg></div>
                         </ul>
+
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+                            </svg></div>
+
+                        
+                        
                     </div>
                 </div>
                 <!--/APP-SIDEBAR-->
@@ -382,6 +414,14 @@
 
                     </div>
 
+                    <!--JS-->
+                    
+                    <script>
+                    
+                        
+                        
+                    </script>
+                
                     <!-- BACK-TO-TOP -->
                     <a href="#top" id="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
 
