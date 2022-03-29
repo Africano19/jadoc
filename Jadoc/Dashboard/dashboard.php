@@ -54,16 +54,7 @@
                     while($dados = mysqli_fetch_array($result)){
                         $user=$dados['Name'];
                         $type=$dados['Tipo_User'];    
-                    }              
-                    
-                    
-                    if(type==3){
-                        echo '<script type="text/JavaScript"> 
-                         document.getElementById("Servicos").style.display = "none";
-                         </script>';
-                    }
-                    
-                    
+                    }                  
                 }
                 else
                 {
@@ -80,7 +71,7 @@
                     <div class="d-flex">
                         <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
                         <!-- sidebar-toggle-->
-                        <a class="logo-horizontal " href="dashboard.html">
+                        <a class="logo-horizontal " href="dashboard.php">
                             <img src=" assets/images/brand/logo-1.png" class="header-brand-img light-logo1" style="width: 50 px; height: 50px;" alt="logo">
                         </a>
                         <!-- LOGO -->
@@ -197,7 +188,7 @@
                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                 <div class="app-sidebar">
                     <div class="side-header">
-                        <a class="header-brand1" href="dashboard.html">
+                        <a class="header-brand1" href="dashboard.php">
                             <img src=" assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
                             <img src=" assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
                             <img src=" assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
@@ -263,7 +254,7 @@
                                 <h3>CONTABILIDADE</h3>
                             </li>
                             <li class="slide" id="contab1">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-bar-chart-fill"></i>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)" onclick="hideservices()"><i class="side-menu__icon bi bi-bar-chart-fill"></i>
                                     <span class="side-menu__label">Mapas</span></a>
                             </li>
                             <li class="slide" id="contab2">
@@ -300,11 +291,14 @@
                             <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
                             </li>
-                            <li class="slide" id="adm1">
+                            <li class="slide" >
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <li class="slide" id="adm2">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                            <li class="slide" >
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                            </li>
+                            <li class="slide" id="adm">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
                         </ul>
 
@@ -341,7 +335,7 @@
 
                         <!-- Body Stuff -->
 
-                        <div class="row">
+                        <div class="row" id="Services_Dash">
                             <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
                                 <div class="card widgets-cards box-primary-shadow">
                                     <div class="card-body d-flex justify-content-center align-items-center">
@@ -417,8 +411,32 @@
                     <!--JS-->
                     
                     <script>
-                    
                         
+                        <?php
+                        if($type==4){
+                        ?>
+                            document.getElementById("adm").style.display = "none";    
+                        <?php
+                        
+                        } else if($type==3){
+                        
+                        ?>
+                            document.getElementById("Contabilidade").style.display = "none"; 
+                            document.getElementById("Gestao").style.display = "none"; 
+                            
+                        <?php
+                        
+                        } else if($type==2){
+                        
+                        ?>
+                            document.getElementById("Servicos").style.display = "none"; 
+                            document.getElementById("Gestao").style.display = "none";  
+                            document.getElementById("Services_Dash").style.display = "none";  
+                        <?php
+                        
+                        }
+                        
+                        ?>
                         
                     </script>
                 
