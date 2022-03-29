@@ -1,6 +1,6 @@
-if ($uname != "" && $password != ""){
+                    if ($uname != "" && $password != ""){
 
-                        $sql_query = "select count(*) as cntUser from users where username='".$uname."' and password='".$password."'";
+                        $sql_query = "select count(*) as cntUser from users where Username='".$uname."' and Password='".$password."'";
                         $result = mysqli_query($con,$sql_query);
                         $row = mysqli_fetch_array($result);
 
@@ -8,7 +8,7 @@ if ($uname != "" && $password != ""){
                         
                         if($count > 0){
                             $_SESSION['uname'] = $uname;                  
-                            header('Location: Dashboard/dashboard.html');
+                            header('Location: Dashboard/dashboard.php');
                         }else{
                             
                         ?>
@@ -30,5 +30,3 @@ if ($uname != "" && $password != ""){
                         }
 
                     }
-
-                }

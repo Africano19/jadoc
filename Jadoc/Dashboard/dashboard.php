@@ -47,23 +47,19 @@
 
                                 <?php
                                 Include('../config.php');
-                                $uname= $_SESSION["uname"];
-                                $sql= "select  count(*) as cntUser from users where username='".$uname."'";
-                                $result = mysqli_query($con,$sql);
-                                $row = mysqli_fetch_array($result);
-                                $count = $row['cntUser'];
-                                if($count > 0){
+                                $id= $_SESSION["ID"];
+                                $sql= "SELECT * FROM users where ID_User= '".$id."'";
+                                $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
+                                $num_rows= mysqli_num_rows($result);
+                                if($num_rows>0)
+                                {
                                 while($dados = mysqli_fetch_array($result)){
-                                $user=$dados['username'];  
+                                $user=$dados['Name'];
                                 }
                                 }
                                 else
                                 {
-                                echo "<script>
-                                    alert('Login não foi efetuado! Por favor faça-o primeiro!')
-                                </script>";
-                                $url = '../login.php';
-		                        echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+                                    echo "<script>alert('Área Reservada!! Efetue um login primeiro!')</script>";
                                 }
                                 ?>
 
@@ -161,8 +157,7 @@
                                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                                 <div class="drop-heading">
                                                     <div class="text-center">
-                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".$uname."</h5>"; ?>
-                                                        <small class="text-muted">Admin</small>
+                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".$user."</h5>"; ?>
                                                     </div>
                                                 </div>
                                                 <div class="dropdown-divider m-0"></div>
