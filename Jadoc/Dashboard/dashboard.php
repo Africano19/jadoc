@@ -5,7 +5,9 @@
 
     <!-- META DATA -->
     <meta charset="UTF-8">
+    <?php header("Content-type: text/html; charset=utf-8"); ?>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sash – Bootstrap 5  Admin & Dashboard Template">
     <meta name="author" content="Spruko Technologies Private Limited">
@@ -43,6 +45,7 @@
     <!-- PAGE -->
     <div class="page">
         <div class="page-main">
+            <!--Conexão a base de dadps para a verificação de conta iniciada-->
             <?php
                 Include('../config.php');
                 $id= $_SESSION["ID"];
@@ -159,17 +162,14 @@
                                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                                 <div class="drop-heading">
                                                     <div class="text-center">
-                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".$user."</h5>"; ?>
+                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".utf8_encode($user)."</h5>"; ?>
                                                     </div>
                                                 </div>
                                                 <div class="dropdown-divider m-0"></div>
                                                 <a class="dropdown-item" href="#">
                                                     <i class="dropdown-icon fe fe-user"></i> Prefil
                                                 </a>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="dropdown-icon fe fe-lock"></i> Lockscreen
-                                                </a>
-                                                <a class="dropdown-item" href="#">
+                                                <a class="dropdown-item" href="logout.php">
                                                     <i class="dropdown-icon fe fe-alert-circle"></i> Sair
                                                 </a>
                                             </div>
@@ -336,7 +336,7 @@
                         <!-- Body Stuff -->
 
                         <div class="row" id="Services_Dash">
-                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
                                 <div class="card widgets-cards box-primary-shadow">
                                     <div class="card-body d-flex justify-content-center align-items-center">
                                         <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.06" data-thickness="6" data-bs-color="#dfcccc ">
@@ -350,7 +350,7 @@
                                 </div>
                             </div>
                             <!-- COL END -->
-                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
                                 <div class="card widgets-cards box-success-shadow">
                                     <div class="card-body d-flex justify-content-center align-items-center">
                                         <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.08" data-thickness="6" data-bs-color="#ffd3d3 ">
@@ -364,7 +364,7 @@
                                 </div>
                             </div>
                             <!-- COL END -->
-                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
                                 <div class="card widgets-cards box-warning-shadow">
                                     <div class="card-body d-flex justify-content-center align-items-center">
                                         <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.02" data-thickness="6" data-bs-color="#ffa4a4 ">
@@ -377,7 +377,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6  col-xl-3">
+                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
                                 <div class="card widgets-cards box-danger-shadow">
                                     <div class="card-body d-flex justify-content-center align-items-center">
                                         <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.83" data-thickness="6" data-bs-color="#d17878 ">
@@ -411,7 +411,7 @@
             </div>
         </div>
     </div>
-                    <!--JS-->
+                    <!--JS ocultar consoante o tipo de user-->
                     
                     <script>
                         
