@@ -183,7 +183,7 @@
             <!-- /app-Header -->
 
              <!--APP-SIDEBAR-->
-             <div class="sticky">
+            <div class="sticky">
                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                 <div class="app-sidebar">
                     <div class="side-header">
@@ -199,8 +199,8 @@
                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                             </svg></div>
-                        
-                        
+
+
                         <ul class="side-menu">
                             <li class="sub-category">
                                 <h3>Main</h3>
@@ -209,10 +209,10 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                             </li>
 
                         </ul>
@@ -290,10 +290,10 @@
                             <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
                             </li>
-                            <li class="slide" >
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <li class="slide" >
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
                             <li class="slide" id="adm">
@@ -304,6 +304,9 @@
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                             </svg></div>
+
+
+
                     </div>
                 </div>
                 <!--/APP-SIDEBAR-->
@@ -633,48 +636,48 @@
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- SPARKLINE JS-->
-    <script src="../assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
 
     <!-- CHART-CIRCLE JS-->
-    <script src="../assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
 
     <!-- C3 CHART JS -->
-    <script src="../assets/plugins/charts-c3/d3.v5.min.js"></script>
-    <script src="../assets/plugins/charts-c3/c3-chart.js"></script>
+    <script src="assets/plugins/charts-c3/d3.v5.min.js"></script>
+    <script src="assets/plugins/charts-c3/c3-chart.js"></script>
 
     <!-- INPUT MASK JS-->
-    <script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
+    <script src="assets/plugins/input-mask/jquery.mask.min.js"></script>
 
     <!-- SIDE-MENU JS -->
-    <script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+    <script src="assets/plugins/sidemenu/sidemenu.js"></script>
 
     <!-- SIDEBAR JS -->
-    <script src="../assets/plugins/sidebar/sidebar.js"></script>
+    <script src="assets/plugins/sidebar/sidebar.js"></script>
 
     <!-- Select2 JS-->
-    <script src="../assets/plugins/select2/select2.full.min.js"></script>
-    <script src="../assets/js/select2.js"></script>
+    <script src="assets/plugins/select2/select2.full.min.js"></script>
+    <script src="assets/js/select2.js"></script>
 
     <!-- Perfect SCROLLBAR JS-->
-    <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-    <script src="../assets/plugins/p-scroll/pscroll.js"></script>
-    <script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
+    <script src="assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="assets/plugins/p-scroll/pscroll.js"></script>
+    <script src="assets/plugins/p-scroll/pscroll-1.js"></script>
 
     <!-- Color Theme js -->
-    <script src="../assets/js/themeColors.js"></script>
+    <script src="assets/js/themeColors.js"></script>
 
     <!-- Sticky js -->
-    <script src="../assets/js/sticky.js"></script>
+    <script src="assets/js/sticky.js"></script>
 
     <!-- CUSTOM JS -->
-    <script src="../assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 
