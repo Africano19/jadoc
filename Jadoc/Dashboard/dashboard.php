@@ -407,7 +407,10 @@
                         <!-- FOOTER END -->
 
                     </div>
-
+                </div>
+            </div>
+        </div>
+    </div>
                     <!--JS-->
                     
                     <script>
