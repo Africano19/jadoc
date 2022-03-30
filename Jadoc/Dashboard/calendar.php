@@ -305,9 +305,6 @@
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                             </svg></div>
-
-                        
-                        
                     </div>
                 </div>
                 <!--/APP-SIDEBAR-->
@@ -322,203 +319,139 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Dashboard</h1>
+                            <h1 class="page-title">Calendário</h1>
                             <div>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Calendário</li>
                                 </ol>
                             </div>
                         </div>
                         <!-- PAGE-HEADER END -->
 
-
-                        <!-- Body Stuff -->
-
-                        <div class="row" id="Services_Dash">
-                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
-                                <div class="card widgets-cards box-primary-shadow">
-                                    <div class="card-body d-flex justify-content-center align-items-center">
-                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.06" data-thickness="6" data-bs-color="#dfcccc ">
-                                            <div class="chart-circle-value">6%</div>
-                                        </div>
-                                        <div class="wrp text-wrapper p-3">
-                                            <p class="mt-0">18</p>
-                                            <p class="mt-1 mb-0">Casos Abertos</p>
-                                        </div>
+                                                <!-- ROW OPEN -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Agenda</h3>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- COL END -->
-                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
-                                <div class="card widgets-cards box-success-shadow">
-                                    <div class="card-body d-flex justify-content-center align-items-center">
-                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.08" data-thickness="6" data-bs-color="#ffd3d3 ">
-                                            <div class="chart-circle-value">8%</div>
-                                        </div>
-                                        <div class="wrp text-wrapper p-3">
-                                            <p class="mt-0">24</p>
-                                            <p class=" mt-1 mb-0">Casos Pendentes</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- COL END -->
-                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
-                                <div class="card widgets-cards box-warning-shadow">
-                                    <div class="card-body d-flex justify-content-center align-items-center">
-                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.02" data-thickness="6" data-bs-color="#ffa4a4 ">
-                                            <div class="chart-circle-value ">2%</div>
-                                        </div>
-                                        <div class="wrp text-wrapper p-3">
-                                            <p class="mt-0">8</p>
-                                            <p class=" mt-1 mb-0">Pendentes Pagamentos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-5  col-xl-3">
-                                <div class="card widgets-cards box-danger-shadow">
-                                    <div class="card-body d-flex justify-content-center align-items-center">
-                                        <div class="chart-circle chart-circle-sm ms-3 mt-1" data-value="0.83" data-thickness="6" data-bs-color="#d17878 ">
-                                            <div class="chart-circle-value">83%</div>
-                                        </div>
-                                        <div class="wrp text-wrapper p-3">
-                                            <p class="mt-0">247</p>
-                                            <p class=" mt-1 mb-0">Concluidos</p>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xl-3">
+                                                <div id="external-events">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-xl-9">
+                                                <div id='calendar2'></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- ROW CLOSED -->
+                    </div>
+                    <!-- CONTAINER CLOSED -->
+                </div>
+            </div>
+            <!--app-content closed-->
+        </div>
 
-                        <!-- !Body Stuff -->
+        
 
-                        <!-- FOOTER -->
-                        <footer class="footer">
-                            <div class="container">
-                                <div class="row align-items-center flex-row-reverse">
-                                    <div class="col-md-12 col-sm-12 text-center">
-                                        Copyright © <span id="year"></span> <a href="javascript:void(0)">JADOC</a>. Designed by <a href="javascript:void(0)"> Ruben, Ana & Marta </a> All rights reserved.
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
-                        <!-- FOOTER END -->
-
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        Copyright © <span id="year"></span> <a href="javascript:void(0)">JADOC</a>. Designed by <a href="javascript:void(0)"> Ruben, Ana & Marta </a> All rights reserved.
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
+        <!-- FOOTER END -->
+
     </div>
-                    <!--JS ocultar consoante o tipo de user-->
-                    
-                    <script>
-                        
-                        <?php
+    <!--JS ocultar consoante o tipo de user-->
+
+    <script>
+        <?php
                         if($type==4){
                         ?>
-                            document.getElementById("adm").style.display = "none";    
-                        <?php
+        document.getElementById("adm").style.display = "none";
+        <?php
                         
                         } else if($type==3){
                         
                         ?>
-                            document.getElementById("Contabilidade").style.display = "none"; 
-                            document.getElementById("Gestao").style.display = "none"; 
-                            
-                        <?php
+        document.getElementById("Contabilidade").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+
+        <?php
                         
                         } else if($type==2){
                         
                         ?>
-                            document.getElementById("Servicos").style.display = "none"; 
-                            document.getElementById("Gestao").style.display = "none";  
-                            document.getElementById("Services_Dash").style.display = "none";  
-                        <?php
+        document.getElementById("Servicos").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+        document.getElementById("Services_Dash").style.display = "none";
+        <?php
                         
                         }
                         
                         ?>
-                        
-                    </script>
-                
-                    <!-- BACK-TO-TOP -->
-                    <a href="#top" id="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
 
-                    <!-- JQUERY JS -->
-                    <script src=" assets/js/jquery.min.js"></script>
+    </script>
 
-                    <!-- BOOTSTRAP JS -->
-                    <script src=" assets/plugins/bootstrap/js/popper.min.js"></script>
-                    <script src=" assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- BACK-TO-TOP -->
+    <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
-                    <!-- SPARKLINE JS-->
-                    <script src=" assets/js/jquery.sparkline.min.js"></script>
+    <!-- JQUERY JS -->
+    <script src=" assets/js/jquery.min.js"></script>
 
-                    <!-- Sticky js -->
-                    <script src=" assets/js/sticky.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src=" assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src=" assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-                    <!-- CHART-CIRCLE JS-->
-                    <script src=" assets/js/circle-progress.min.js"></script>
+    <!-- SPARKLINE JS -->
+    <script src=" assets/js/jquery.sparkline.min.js"></script>
 
-                    <!-- PIETY CHART JS-->
-                    <script src=" assets/plugins/peitychart/jquery.peity.min.js"></script>
-                    <script src=" assets/plugins/peitychart/peitychart.init.js"></script>
+    <!-- CHART-CIRCLE JS -->
+    <script src=" assets/js/circle-progress.min.js"></script>
 
-                    <!-- SIDEBAR JS -->
-                    <script src=" assets/plugins/sidebar/sidebar.js"></script>
+    <!-- C3 CHART JS -->
+    <script src=" assets/plugins/charts-c3/d3.v5.min.js"></script>
+    <script src=" assets/plugins/charts-c3/c3-chart.js"></script>
 
-                    <!-- Perfect SCROLLBAR JS-->
-                    <script src=" assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-                    <script src=" assets/plugins/p-scroll/pscroll.js"></script>
-                    <script src=" assets/plugins/p-scroll/pscroll-1.js"></script>
+    <!-- INPUT MASK JS-->
+    <script src=" assets/plugins/input-mask/jquery.mask.min.js"></script>
 
-                    <!-- INTERNAL CHARTJS CHART JS-->
-                    <script src=" assets/plugins/chart/Chart.bundle.js"></script>
-                    <script src=" assets/plugins/chart/rounded-barchart.js"></script>
-                    <script src=" assets/plugins/chart/utils.js"></script>
+    <!-- FULL CALENDAR JS -->
+    <script src=' assets/plugins/fullcalendar/moment.min.js'></script>
+    <script src=' assets/plugins/fullcalendar/fullcalendar.min.js'></script>
+    <script src=" assets/js/fullcalendar.js"></script>
 
-                    <!-- INTERNAL SELECT2 JS -->
-                    <script src=" assets/plugins/select2/select2.full.min.js"></script>
+    <!-- SIDE-MENU JS -->
+    <script src=" assets/plugins/sidemenu/sidemenu.js"></script>
 
-                    <!-- INTERNAL Data tables js-->
-                    <script src=" assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-                    <script src=" assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-                    <script src=" assets/plugins/datatable/dataTables.responsive.min.js"></script>
+    <!-- SIDEBAR JS -->
+    <script src=" assets/plugins/sidebar/sidebar.js"></script>
 
-                    <!-- INTERNAL APEXCHART JS -->
-                    <script src=" assets/js/apexcharts.js"></script>
-                    <script src=" assets/plugins/apexchart/irregular-data-series.js"></script>
+    <!-- Perfect SCROLLBAR JS-->
+    <script src=" assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src=" assets/plugins/p-scroll/pscroll.js"></script>
+    <script src=" assets/plugins/p-scroll/pscroll-1.js"></script>
 
-                    <!-- C3 CHART JS -->
-                    <script src=" assets/plugins/charts-c3/d3.v5.min.js"></script>
-                    <script src=" assets/plugins/charts-c3/c3-chart.js"></script>
+    <!-- Color Theme js -->
+    <script src=" assets/js/themeColors.js"></script>
 
-                    <!-- CHART-DONUT JS -->
-                    <script src=" assets/js/charts.js"></script>
+    <!-- Sticky js -->
+    <script src=" assets/js/sticky.js"></script>
 
-                    <!-- INTERNAL Flot JS -->
-                    <script src=" assets/plugins/flot/jquery.flot.js"></script>
-                    <script src=" assets/plugins/flot/jquery.flot.fillbetween.js"></script>
-                    <script src=" assets/plugins/flot/chart.flot.sampledata.js"></script>
-                    <script src=" assets/plugins/flot/dashboard.sampledata.js"></script>
-
-                    <!-- INTERNAL Vector js -->
-                    <script src=" assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-                    <script src=" assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-
-                    <!-- SIDE-MENU JS-->
-                    <script src=" assets/plugins/sidemenu/sidemenu.js"></script>
-
-                    <!-- INTERNAL INDEX JS -->
-                    <script src=" assets/js/index1.js"></script>
-
-                    <!-- Color Theme js -->
-                    <script src=" assets/js/themeColors.js"></script>
-
-                    <!-- CUSTOM JS -->
-                    <script src=" assets/js/custom.js"></script>
+    <!-- CUSTOM JS -->
+    <script src=" assets/js/custom.js"></script>
 
 </body>
 

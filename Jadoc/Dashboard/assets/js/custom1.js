@@ -6,9 +6,6 @@
         $("#global-loader").fadeOut("slow");
     })
 
-    // FOOTER
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-
     // COLOR THEME
     $(document).on("click", "a[data-theme]", function () {
         $("head link#theme").attr("href", $(this).data("theme"));
@@ -204,6 +201,9 @@
 			$('body').removeClass('light-mode');
 			$('body').removeClass('transparent-mode');
 
+            $('#myonoffswitch5').prop('checked', true);
+            $('#myonoffswitch8').prop('checked', true);
+
 			localStorage.setItem('darkMode', true);
 			localStorage.removeItem('lightMode');
 			localStorage.removeItem('transparentMode');
@@ -212,6 +212,8 @@
 		} else {
 			$('body').removeClass('dark-mode');
 			$('body').addClass('light-mode');
+            $('#myonoffswitch3').prop('checked', true);
+            $('#myonoffswitch6').prop('checked', true);
 
 			localStorage.setItem('lightMode', true);
 			localStorage.removeItem('transparentMode');

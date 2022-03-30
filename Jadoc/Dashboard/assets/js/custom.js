@@ -5,9 +5,6 @@
     $(window).on("load", function (e) {
         $("#global-loader").fadeOut("slow");
     })
-    
-    // FOOTER
-    document.getElementById("year").innerHTML = new Date().getFullYear();
 
     // COLOR THEME
     $(document).on("click", "a[data-theme]", function () {
@@ -241,9 +238,9 @@
 	// $('body').removeClass('transparent-mode');
 
 	//---- Transparent mode ----//
-	$('body').addClass('transparent-mode');
-	$('body').removeClass('light-mode');
-	$('body').removeClass('dark-mode');
+	// $('body').addClass('transparent-mode');
+	// $('body').removeClass('light-mode');
+	// $('body').removeClass('dark-mode');
 
 
 	/******* Transparent Bg-Image Style *******/

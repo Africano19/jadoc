@@ -223,18 +223,26 @@ function localStorageBackup() {
 		document.querySelector('body')?.classList.remove('dark-mode');
 		document.querySelector('body')?.classList.remove('transparent-mode');
         $('#myonoffswitch1').prop('checked', true);
+        $('#myonoffswitch3').prop('checked', true);
+        $('#myonoffswitch6').prop('checked', true);
     }
     if(localStorage.darkMode){
         document.querySelector('body')?.classList.remove('light-mode');
 		document.querySelector('body')?.classList.add('dark-mode');
 		document.querySelector('body')?.classList.remove('transparent-mode');
         $('#myonoffswitch2').prop('checked', true);
+        $('#myonoffswitch5').prop('checked', true);
+        $('#myonoffswitch8').prop('checked', true);
     }
     if(localStorage.transparentMode){
         document.querySelector('body')?.classList.remove('light-mode');
 		document.querySelector('body')?.classList.remove('dark-mode');
 		document.querySelector('body')?.classList.add('transparent-mode');
         $('#myonoffswitchTransparent').prop('checked', true);
+        $('#myonoffswitch3').prop('checked', false);
+        $('#myonoffswitch6').prop('checked', false);
+        $('#myonoffswitch5').prop('checked', false);
+        $('#myonoffswitch8').prop('checked', false);
     }
 }
 

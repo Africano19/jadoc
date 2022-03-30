@@ -338,7 +338,7 @@
                             <div class="col-xl-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <div class="card-title">Edit Password</div>
+                                        <div class="card-title">Alterar Password</div>
                                     </div>
                                     <div class="card-body">
                                         <div class="text-center chat-image mb-5">
@@ -363,7 +363,7 @@
                                                 ?>
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label">Current Password</label>
+                                            <label class="form-label">Password Atual</label>
                                             <div class="wrap-input100 validate-input input-group" id="Password-toggle">
                                                 <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
@@ -373,7 +373,7 @@
                                             <!-- <input type="password" class="form-control" value="password"> -->
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label">New Password</label>
+                                            <label class="form-label">Nova Password</label>
                                             <div class="wrap-input100 validate-input input-group" id="Password-toggle1">
                                                 <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
@@ -383,7 +383,7 @@
                                             <!-- <input type="password" class="form-control" value="password"> -->
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label">Confirm Password</label>
+                                            <label class="form-label">Confirme a Password</label>
                                             <div class="wrap-input100 validate-input input-group" id="Password-toggle2">
                                                 <a href="javascript:void(0)" class="input-group-text bg-white text-muted">
                                                     <i class="zmdi zmdi-eye text-muted" aria-hidden="true"></i>
@@ -394,15 +394,15 @@
                                         </div>
                                     </div>
                                     <div class="card-footer text-end">
-                                        <a href="javascript:void(0)" class="btn btn-primary">Update</a>
-                                        <a href="javascript:void(0)" class="btn btn-danger">Cancel</a>
+                                        <a href="javascript:void(0)" class="btn btn-primary">Alterar</a>
+                                        <a href="javascript:void(0)" class="btn" style="background-color:#fff;">Cancelar</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-8">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Edit Profile</h3>
+                                        <h3 class="card-title">Alterar Prefil</h3>
                                     </div>
                                     <div class="card-body">
                                         <div class="form-group">
@@ -415,11 +415,11 @@
                                             <?php echo "<input type='email' class='form-control' id='exampleInputEmail1' placeholder=".utf8_encode($email).">"; ?>
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputnumber">Contact Number</label>
+                                            <label for="exampleInputnumber">Contacto Telefónico</label>
                                             <input type="number" class="form-control" id="exampleInputnumber" placeholder="Contact number">
                                         </div>
                                         <div class="form-group">
-                                            <label class="form-label">Date Of Birth</label>
+                                            <label class="form-label">Data de Nascimento</label>
                                             <div class="row">
                                                 <div class="col-md-4 mb-2">
                                                     <select class="form-control select2 form-select">
@@ -514,8 +514,8 @@
                                         </div>
                                     </div>
                                     <div class="card-footer text-end">
-                                        <a href="javascript:void(0)" class="btn btn-success my-1">Save</a>
-                                        <a href="javascript:void(0)" class="btn btn-danger my-1">Cancel</a>
+                                        <a href="javascript:void(0)" class="btn btn-primary">Alterar</a>
+                                        <a href="javascript:void(0)" class="btn" style="background-color:#fff;">Cancelar</a>
                                     </div>
                                 </div>
                             </div>
