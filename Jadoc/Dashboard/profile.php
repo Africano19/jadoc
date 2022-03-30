@@ -208,13 +208,13 @@
                                 <h3>Main</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.html"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.html"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.html"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                             </li>
 
                         </ul>
@@ -342,15 +342,25 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="text-center chat-image mb-5">
-                                            <div class="avatar avatar-xxl chat-profile mb-3 brround">
-                                                <a class="" href="profile.html"><img alt="avatar" src="../assets/images/users/7.jpg" class="brround"></a>
+                                            <div class="avatar avatar-xxl bradius cover-image">
+                                                <a class="" href="profile.php"><img alt="avatar" src="assets/images/brand/logo-2.png" class="brround"></a>
                                             </div>
                                             <div class="main-chat-msg-name">
-                                                <a href="profile.html">
-                                                    <h5 class="mb-1 text-dark fw-semibold">Percy Kewshun</h5>
+                                                <a href="profile.php">
+                                                    <?php echo "<center><h5 class='page-title'>".utf8_encode($user)."</h5></center>"; ?>
                                                 </a>
-                                                <p class="text-muted mt-0 mb-0 pt-0 fs-13">Web Designer</p>
                                             </div>
+                                            <?php 
+                                                    if($type==5){
+                                                        echo "<p class'text-muted mt-0 mb-0 pt-0 fs-13'>Administrador</p>"; 
+                                                    }else if($type==4){
+                                                        echo "<p class'text-muted mt-0 mb-0 pt-0 fs-13'>Gestora</p>"; 
+                                                    }else if($type==3){
+                                                        echo "<p class'text-muted mt-0 mb-0 pt-0 fs-13'>Funcionária</p>"; 
+                                                    }else if($type==2){
+                                                        echo "<p class'text-muted mt-0 mb-0 pt-0 fs-13'>Contabilista</p>"; 
+                                                    }
+                                                ?>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Current Password</label>
@@ -388,36 +398,6 @@
                                         <a href="javascript:void(0)" class="btn btn-danger">Cancel</a>
                                     </div>
                                 </div>
-                                <div class="card panel-theme">
-                                    <div class="card-header">
-                                        <div class="float-start">
-                                            <h3 class="card-title">Contact</h3>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <div class="card-body no-padding">
-                                        <ul class="list-group no-margin">
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=""><i class="fe fe-mail"></i></a>
-                                                </div>
-                                                <a href="javascript:void(0)" class="my-auto">support@demo.com</a>
-                                            </li>
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=""><i class="fe fe-globe"></i></a>
-                                                </div>
-                                                <a href="javascript:void(0)" class="my-auto">www.abcd.com</a>
-                                            </li>
-                                            <li class="list-group-item d-flex ps-3">
-                                                <div class="social social-profile-buttons me-2">
-                                                    <a class="social-icon text-primary" href=""><i class="fe fe-phone"></i></a>
-                                                </div>
-                                                <a href="javascript:void(0)" class="my-auto">+125 5826 3658</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                             <div class="col-xl-8">
                                 <div class="card">
@@ -425,35 +405,18 @@
                                         <h3 class="card-title">Edit Profile</h3>
                                     </div>
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-12">
-                                                <div class="form-group">
-                                                    <label for="exampleInputname">First Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputname" placeholder="First Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-md-12">
-                                                <div class="form-group">
-                                                    <label for="exampleInputname1">Last Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputname1" placeholder="Enter Last Name">
-                                                </div>
-                                            </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputname">Nome</label>
+                                            <?php echo "<input type='text' class='form-control' id='exampleInputname' placeholder=".utf8_encode($user).">"; ?>
+                                            
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+                                            <label for="exampleInputEmail1">Email</label>
+                                            <?php echo "<input type='email' class='form-control' id='exampleInputEmail1' placeholder=".utf8_encode($email).">"; ?>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputnumber">Contact Number</label>
                                             <input type="number" class="form-control" id="exampleInputnumber" placeholder="Contact number">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">About Me</label>
-                                            <textarea class="form-control" rows="6">My bio.........</textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label">Website</label>
-                                            <input class="form-control" placeholder="http://splink.com">
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Date Of Birth</label>
