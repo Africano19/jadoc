@@ -128,7 +128,7 @@
                 <div class="container-login100">
                     <div class="wrap-login100 p-7">
                         <form class="login100-form validate-form" method="post">
-                            <center><img src="../Dashboard/assets/images/brand/logo-4.png" class="header-brand-img desktop-logo" alt="logo" style="width: 65%; height: 65%;"></center>
+                            <center><a href="index.html"><img src="../Dashboard/assets/images/brand/logo-4.png" class="header-brand-img desktop-logo" alt="logo" style="width: 65%; height: 65%;"></a></center>
                             <br />
                             <div class="panel panel-primary">
                                 <div class="tab-menu-heading">

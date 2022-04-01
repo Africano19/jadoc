@@ -200,8 +200,8 @@
                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                             </svg></div>
-                        
-                        
+
+
                         <ul class="side-menu">
                             <li class="sub-category">
                                 <h3>Main</h3>
@@ -239,7 +239,7 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
                                     <li><a href="Servic/active-users.php" class="slide-item"> Ativos</a></li>
                                     <li><a href="Servic/inactive-users.php" class="slide-item"> Inativos</a></li>
                                 </ul>
@@ -291,11 +291,11 @@
                             <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
                             </li>
-                            <li class="slide" >
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <li class="slide" >
-                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
                             <li class="slide" id="adm">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
@@ -329,7 +329,7 @@
                         </div>
                         <!-- PAGE-HEADER END -->
 
-                                                <!-- ROW OPEN -->
+                        <!-- ROW OPEN -->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
@@ -340,7 +340,7 @@
                                         <div class="row">
                                             <div class="col-md-5 col-xl-3">
                                                 <div id="external-events">
-                                                    
+
                                                 </div>
                                             </div>
                                             <div class="col-md-7 col-xl-9">
@@ -359,7 +359,7 @@
             <!--app-content closed-->
         </div>
 
-        
+
 
         <!-- FOOTER -->
         <footer class="footer">

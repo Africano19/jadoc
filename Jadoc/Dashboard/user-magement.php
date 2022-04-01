@@ -182,7 +182,7 @@
             </div>
             <!-- /app-Header -->
 
-             <!--APP-SIDEBAR-->
+            <!--APP-SIDEBAR-->
             <div class="sticky">
                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                 <div class="app-sidebar">
@@ -206,10 +206,10 @@
                                 <h3>Main</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="../dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
@@ -238,7 +238,7 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
                                     <li><a href="active-users.php" class="slide-item"> Ativos</a></li>
                                     <li><a href="inactive-users.php" class="slide-item"> Inativos</a></li>
                                 </ul>
@@ -322,11 +322,11 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Utilizadores</h1>
+                            <h1 class="page-title">Funcionários</h1>
                             <div>
                                 <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Utilizadores</li>
+                                    <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Gestor de Utilizadores</li>
                                 </ol>
                             </div>
                         </div>
@@ -343,12 +343,11 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-header border-bottom-0 p-4">
-                                        <h2 class="card-title">1 - 30 of 546 users</h2>
+                                        <h2 class="card-title"></h2>
                                         <div class="page-options ms-auto">
                                             <select class="form-control select2 w-100">
-                                                    <option value="asc">Latest</option>
-                                                    <option value="desc">Oldest</option>
-                                                </select>
+                                                <!--Filtros-->
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="e-table px-5 pb-5">
@@ -356,227 +355,60 @@
                                             <table class="table border-top table-bordered mb-0">
                                                 <thead>
                                                     <tr>
-                                                        <th class="text-center">
-
-                                                        </th>
-                                                        <th class="text-center">Photo</th>
-                                                        <th>Name</th>
-                                                        <th>Date</th>
+                                                        <th class="text-center">Foto</th>
+                                                        <th>Nome</th>
+                                                        <th>Email</th>
+                                                        <th>Função</th>
                                                         <th class="text-center">Actions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-1" type="checkbox"> <label class="custom-control-label" for="item-1"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/16.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Adam Cotter</td>
-                                                        <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
 
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-2" type="checkbox"> <label class="custom-control-label" for="item-2"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/15.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Pauline Noble</td>
-                                                        <td class="text-nowrap align-middle"><span>26 Jan 2018</span></td>
+                                                    <?php
+                                                            $sql1= "SELECT * FROM users";
+                                                            $result1= mysqli_query($con,$sql1) or die("Sql Error".mysql_error());
+                                                            $num_rows1= mysqli_num_rows($result1);
+                                                            if($num_rows1>0)
+                                                            {
+                                                            while($dados1 = mysqli_fetch_array($result1)){
+                                                            $username=$dados1['Username'];
+                                                            $name=$dados1['Name'];
+                                                            $type1=$dados1['Tipo_User'];
+                                                            if($type1==5){
+                                                                $typeuser="Administrador";
+                                                            }else if($type1==4){
+                                                                $typeuser="Gestora";
+                                                            }else if($type1==3){
+                                                                $typeuser="Funcionária";
+                                                            }else if($type1==2){
+                                                                $typeuser="Contabilista";
+                                                            }
+                                                            
+                                                             
+                                                            echo "<tr>";
+                                                            echo "<td class='align-middle text-center'><img alt='image' class='avatar avatar-md br-7' src='../assets/images/users/16.jpg'></td>";
+                                                            echo "<td class='text-nowrap align-middle'>".$name."</td>";
+                                                            echo "<td class='text-nowrap align-middle'>".$username."</td>";
+                                                            echo "<td class='text-nowrap align-middle'>".$typeuser."</td>";
+                                                                ?>
+                                                                <td class='text-center align-middle'>
+                                                                    <div class="btn-group align-top">
+                                                                        <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
+                                                                    </div>
+                                                                </td>
+                                                                <?php 
+                                                            echo"</tr>";   
+                                                                
+                                                                
+                                                            }
+                                                            }
 
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-3" type="checkbox"> <label class="custom-control-label" for="item-3"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/4.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Sherilyn Metzel</td>
-                                                        <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
+                                                            ?>
 
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-4" type="checkbox"> <label class="custom-control-label" for="item-4"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/3.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Terrie Boaler</td>
-                                                        <td class="text-nowrap align-middle"><span>20 Jan 2018</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-5" type="checkbox"> <label class="custom-control-label" for="item-5"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/19.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Rutter Pude</td>
-                                                        <td class="text-nowrap align-middle"><span>13 Jan 2018</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary  badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-6" type="checkbox"> <label class="custom-control-label" for="item-6"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/21.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Clifford Benjamin</td>
-                                                        <td class="text-nowrap align-middle"><span>25 Jan 2018</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-7" type="checkbox"> <label class="custom-control-label" for="item-7"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Thedric Romans</td>
-                                                        <td class="text-nowrap align-middle"><span>12 Jan 2018</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-8" type="checkbox"> <label class="custom-control-label" for="item-8"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/1.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Haily Carthew</td>
-                                                        <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-9" type="checkbox"> <label class="custom-control-label" for="item-9"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Dorothea Joicey</td>
-                                                        <td class="text-nowrap align-middle"><span>12 Dec 2017</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-10" type="checkbox"> <label class="custom-control-label" for="item-10"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/15.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Mikaela Pinel</td>
-                                                        <td class="text-nowrap align-middle"><span>10 Dec 2017</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-11" type="checkbox"> <label class="custom-control-label" for="item-11"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Donnell Farries</td>
-                                                        <td class="text-nowrap align-middle"><span>03 Dec 2017</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="align-middle text-center">
-                                                            <div class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
-                                                                <input class="custom-control-input" id="item-12" type="checkbox"> <label class="custom-control-label" for="item-12"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/4.jpg"></td>
-                                                        <td class="text-nowrap align-middle">Letizia Puncher</td>
-                                                        <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
-
-                                                        <td class="text-center align-middle">
-                                                            <div class="btn-group align-top">
-                                                                <button class="btn btn-sm btn-primary badge" data-target="#user-form-modal" data-bs-toggle="" type="button">Edit</button> <button class="btn btn-sm btn-primary badge" type="button"><i class="fa fa-trash"></i></button>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="mb-5">
-                                    <ul class="pagination float-end">
-                                        <li class="page-item page-prev disabled">
-                                            <a class="page-link" href="javascript:void(0)" tabindex="-1">Prev</a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
-                                        <li class="page-item page-next">
-                                            <a class="page-link" href="javascript:void(0)">Next</a>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                             <!-- COL-END -->
@@ -593,7 +425,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="row align-items-center flex-row-reverse">
-                <div class="col-md-12 col-sm-12 text-center">
+                    <div class="col-md-12 col-sm-12 text-center">
                         Copyright © <span id="year"></span> <a href="javascript:void(0)">JADOC</a>. Designed by <a href="javascript:void(0)"> Ruben, Ana & Marta </a> All rights reserved.
                     </div>
                 </div>
