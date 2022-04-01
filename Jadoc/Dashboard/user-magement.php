@@ -24,9 +24,6 @@
 
     <!-- STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link href="assets/css/dark-style.css" rel="stylesheet" />
-    <link href="assets/css/transparent-style.css" rel="stylesheet">
-    <link href="assets/css/skin-modes.css" rel="stylesheet" />
 
     <!--- FONT-ICONS CSS -->
     <link href="assets/css/icons.css" rel="stylesheet" />
@@ -186,7 +183,7 @@
             <!-- /app-Header -->
 
              <!--APP-SIDEBAR-->
-             <div class="sticky">
+            <div class="sticky">
                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
                 <div class="app-sidebar">
                     <div class="side-header">
@@ -202,20 +199,20 @@
                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                             </svg></div>
-                        
-                        
+
+
                         <ul class="side-menu">
                             <li class="sub-category">
                                 <h3>Main</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="../dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                             </li>
 
                         </ul>
@@ -241,7 +238,7 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
                                     <li><a href="active-users.php" class="slide-item"> Ativos</a></li>
                                     <li><a href="inactive-users.php" class="slide-item"> Inativos</a></li>
                                 </ul>
@@ -293,10 +290,10 @@
                             <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
                             </li>
-                            <li class="slide" >
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
-                            <li class="slide" >
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
                             <li class="slide" id="adm">
@@ -307,6 +304,9 @@
                         <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                 <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                             </svg></div>
+
+
+
                     </div>
                 </div>
                 <!--/APP-SIDEBAR-->

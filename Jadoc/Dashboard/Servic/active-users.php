@@ -14,22 +14,22 @@
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/brand/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
 
     <!-- TITLE -->
     <title>JA DOC - DASHBOARD</title>
     <?php session_start();?>
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="style" href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
 
     <!--- FONT-ICONS CSS -->
-    <link href="assets/css/icons.css" rel="stylesheet" />
+    <link href="../assets/css/icons.css" rel="stylesheet" />
 
     <!-- COLOR SKIN CSS -->
-    <link id="theme" rel="stylesheet" type="text/css" media="all" href="assets/colors/color1.css" />
+    <link id="theme" rel="stylesheet" type="text/css" media="all" href="../assets/colors/color1.css" />
 
 </head>
 
@@ -37,7 +37,7 @@
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
-        <img src="assets/images/loader.svg" class="loader-img" alt="Loader">
+        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
     </div>
     <!-- /GLOBAL-LOADER -->
 
@@ -46,7 +46,7 @@
         <div class="page-main">
             <!--Conexão a base de dadps para a verificação de conta iniciada-->
             <?php
-                Include('../config.php');
+                Include('../../config.php');
                 $id= $_SESSION["ID"];
                 $sql= "SELECT * FROM users where ID_User= '".$id."'";
                 $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
@@ -74,7 +74,7 @@
                         <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
                         <!-- sidebar-toggle-->
                         <a class="logo-horizontal " href="dashboard.php">
-                            <img src=" assets/images/brand/logo-1.png" class="header-brand-img light-logo1" style="width: 50 px; height: 50px;" alt="logo">
+                            <img src=" ../assets/images/brand/logo-1.png" class="header-brand-img light-logo1" style="width: 50 px; height: 50px;" alt="logo">
                         </a>
                         <!-- LOGO -->
                         <div class="main-header-center ms-3 d-none d-lg-block">
@@ -156,7 +156,7 @@
                                         <!-- SIDE-MENU -->
                                         <div class="dropdown d-flex profile-1">
                                             <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
-                                                <img src=" assets/images/brand/logo-2.png" alt="profile-user" class="avatar  profile-user brround cover-image">
+                                                <img src=" ../assets/images/brand/logo-2.png" alt="profile-user" class="avatar  profile-user brround cover-image">
                                             </a>
                                             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                                 <div class="drop-heading">
@@ -188,10 +188,10 @@
                 <div class="app-sidebar">
                     <div class="side-header">
                         <a class="header-brand1" href="dashboard.php">
-                            <img src=" assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+                            <img src=" ../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                            <img src=" ../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+                            <img src=" ../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                            <img src=" ../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
                         </a>
                         <!-- LOGO -->
                     </div>
@@ -206,10 +206,10 @@
                                 <h3>Main</h3>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="../dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
@@ -238,7 +238,7 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
                                     <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
                                 <ul class="slide-menu">
-                                    <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
                                     <li><a href="active-users.php" class="slide-item"> Ativos</a></li>
                                     <li><a href="inactive-users.php" class="slide-item"> Inativos</a></li>
                                 </ul>
@@ -372,7 +372,7 @@
                                                                 <input class="custom-control-input" id="item-1" type="checkbox"> <label class="custom-control-label" for="item-1"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/16.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/16.jpg"></td>
                                                         <td class="text-nowrap align-middle">Adam Cotter</td>
                                                         <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
 
@@ -388,7 +388,7 @@
                                                                 <input class="custom-control-input" id="item-2" type="checkbox"> <label class="custom-control-label" for="item-2"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/15.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/15.jpg"></td>
                                                         <td class="text-nowrap align-middle">Pauline Noble</td>
                                                         <td class="text-nowrap align-middle"><span>26 Jan 2018</span></td>
 
@@ -404,7 +404,7 @@
                                                                 <input class="custom-control-input" id="item-3" type="checkbox"> <label class="custom-control-label" for="item-3"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/4.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/4.jpg"></td>
                                                         <td class="text-nowrap align-middle">Sherilyn Metzel</td>
                                                         <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
 
@@ -420,7 +420,7 @@
                                                                 <input class="custom-control-input" id="item-4" type="checkbox"> <label class="custom-control-label" for="item-4"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/3.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/3.jpg"></td>
                                                         <td class="text-nowrap align-middle">Terrie Boaler</td>
                                                         <td class="text-nowrap align-middle"><span>20 Jan 2018</span></td>
 
@@ -436,7 +436,7 @@
                                                                 <input class="custom-control-input" id="item-5" type="checkbox"> <label class="custom-control-label" for="item-5"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/19.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/19.jpg"></td>
                                                         <td class="text-nowrap align-middle">Rutter Pude</td>
                                                         <td class="text-nowrap align-middle"><span>13 Jan 2018</span></td>
 
@@ -452,7 +452,7 @@
                                                                 <input class="custom-control-input" id="item-6" type="checkbox"> <label class="custom-control-label" for="item-6"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/21.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/21.jpg"></td>
                                                         <td class="text-nowrap align-middle">Clifford Benjamin</td>
                                                         <td class="text-nowrap align-middle"><span>25 Jan 2018</span></td>
 
@@ -468,7 +468,7 @@
                                                                 <input class="custom-control-input" id="item-7" type="checkbox"> <label class="custom-control-label" for="item-7"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/12.jpg"></td>
                                                         <td class="text-nowrap align-middle">Thedric Romans</td>
                                                         <td class="text-nowrap align-middle"><span>12 Jan 2018</span></td>
 
@@ -484,7 +484,7 @@
                                                                 <input class="custom-control-input" id="item-8" type="checkbox"> <label class="custom-control-label" for="item-8"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/1.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/1.jpg"></td>
                                                         <td class="text-nowrap align-middle">Haily Carthew</td>
                                                         <td class="text-nowrap align-middle"><span>27 Jan 2018</span></td>
 
@@ -500,7 +500,7 @@
                                                                 <input class="custom-control-input" id="item-9" type="checkbox"> <label class="custom-control-label" for="item-9"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/12.jpg"></td>
                                                         <td class="text-nowrap align-middle">Dorothea Joicey</td>
                                                         <td class="text-nowrap align-middle"><span>12 Dec 2017</span></td>
 
@@ -516,7 +516,7 @@
                                                                 <input class="custom-control-input" id="item-10" type="checkbox"> <label class="custom-control-label" for="item-10"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/15.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/15.jpg"></td>
                                                         <td class="text-nowrap align-middle">Mikaela Pinel</td>
                                                         <td class="text-nowrap align-middle"><span>10 Dec 2017</span></td>
 
@@ -532,7 +532,7 @@
                                                                 <input class="custom-control-input" id="item-11" type="checkbox"> <label class="custom-control-label" for="item-11"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/12.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/12.jpg"></td>
                                                         <td class="text-nowrap align-middle">Donnell Farries</td>
                                                         <td class="text-nowrap align-middle"><span>03 Dec 2017</span></td>
 
@@ -548,7 +548,7 @@
                                                                 <input class="custom-control-input" id="item-12" type="checkbox"> <label class="custom-control-label" for="item-12"></label>
                                                             </div>
                                                         </td>
-                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../assets/images/users/4.jpg"></td>
+                                                        <td class="align-middle text-center"><img alt="image" class="avatar avatar-md br-7" src="../../assets/images/users/4.jpg"></td>
                                                         <td class="text-nowrap align-middle">Letizia Puncher</td>
                                                         <td class="text-nowrap align-middle"><span>09 Dec 2017</span></td>
 
@@ -636,48 +636,48 @@
     <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JQUERY JS -->
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
 
     <!-- BOOTSTRAP JS -->
-    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- SPARKLINE JS-->
-    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="../assets/js/jquery.sparkline.min.js"></script>
 
     <!-- CHART-CIRCLE JS-->
-    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="../assets/js/circle-progress.min.js"></script>
 
     <!-- C3 CHART JS -->
-    <script src="assets/plugins/charts-c3/d3.v5.min.js"></script>
-    <script src="assets/plugins/charts-c3/c3-chart.js"></script>
+    <script src="../assets/plugins/charts-c3/d3.v5.min.js"></script>
+    <script src="../assets/plugins/charts-c3/c3-chart.js"></script>
 
     <!-- INPUT MASK JS-->
-    <script src="assets/plugins/input-mask/jquery.mask.min.js"></script>
+    <script src="../assets/plugins/input-mask/jquery.mask.min.js"></script>
 
     <!-- SIDE-MENU JS -->
-    <script src="assets/plugins/sidemenu/sidemenu.js"></script>
+    <script src="../assets/plugins/sidemenu/sidemenu.js"></script>
 
     <!-- SIDEBAR JS -->
-    <script src="assets/plugins/sidebar/sidebar.js"></script>
+    <script src="../assets/plugins/sidebar/sidebar.js"></script>
 
     <!-- Select2 JS-->
-    <script src="assets/plugins/select2/select2.full.min.js"></script>
-    <script src="assets/js/select2.js"></script>
+    <script src="../assets/plugins/select2/select2.full.min.js"></script>
+    <script src="../assets/js/select2.js"></script>
 
     <!-- Perfect SCROLLBAR JS-->
-    <script src="assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-    <script src="assets/plugins/p-scroll/pscroll.js"></script>
-    <script src="assets/plugins/p-scroll/pscroll-1.js"></script>
+    <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="../assets/plugins/p-scroll/pscroll.js"></script>
+    <script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
 
     <!-- Color Theme js -->
-    <script src="assets/js/themeColors.js"></script>
+    <script src="../assets/js/themeColors.js"></script>
 
     <!-- Sticky js -->
-    <script src="assets/js/sticky.js"></script>
+    <script src="../assets/js/sticky.js"></script>
 
     <!-- CUSTOM JS -->
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
 </body>
 
