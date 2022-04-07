@@ -62,7 +62,7 @@
                     $user = mysqli_real_escape_string($con,$_POST['txt_uname']);
                     $pass = mysqli_real_escape_string($con,$_POST['txt_pwd']);
 
-                    
+
                     	if($user=="" || $pass=="")
                         {
 
@@ -75,15 +75,15 @@
                             $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
                             $num_rows= mysqli_num_rows($result);
                            if($num_rows>0)
-                           {	
+                           {
                                while($dados = mysqli_fetch_array($result)){
                                    $id=$dados['ID_User'];
                               if($dados['Ativo']==1){
                                   if (isset ($_SESSION["ID"])){
-                            $_SESSION["ID"] = "$id";	
+                            $_SESSION["ID"] = "$id";
 
                             }else{
-                            $_SESSION["ID"] = "$id";	
+                            $_SESSION["ID"] = "$id";
 
                             }
                             $url = 'Dashboard/dashboard.php';
@@ -92,16 +92,16 @@
 
                             echo "<script>alert( 'O Utilizador não está ativo');</script>";
                             $url = 'login.php';
-                            echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';  
+                            echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
                                }
                            }
                             }
                             else
                             {
                             {
-                                echo "<script>alert('username or password incorrect')</script>";
+                                echo "document.getElementById('click2').click();";
                                 $url = 'login.php';
-                            echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';  
+                            echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
 
                             }
                         }
@@ -151,6 +151,7 @@
                                             <div class="text-begin pt-4">
                                                 <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Esqueci-me da Password</a></p>
                                             </div>
+                                            <input type='button' class="btn btn-danger mt-2" value='Danger alert' id='click2'>
                                             <div class="container-login100-form-btn">
                                                 <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id="but_submit" style="width: 100%;" />
                                             </div>
@@ -169,8 +170,6 @@
         <!-- End PAGE -->
 
 
-
-
     </div>
     <!-- BACKGROUND-IMAGE CLOSED -->
 
@@ -184,6 +183,10 @@
     <!-- SHOW PASSWORD JS -->
     <script src="../Dashboard/assets/js/show-password.min.js"></script>
 
+    <!-- SWEET-ALERT JS -->
+    <script src="../Dashboard/assets/plugins/sweet-alert/sweetalert.min.js"></script>
+    <script src="../Dashboard/assets/js/sweet-alert.js"></script>
+
     <!-- GENERATE OTP JS -->
     <script src="../Dashboard/assets/js/generate-otp.js"></script>
 
@@ -195,6 +198,7 @@
 
     <!-- CUSTOM JS -->
     <script src="../Dashboard/assets/js/custom.js"></script>
+
 
 </body>
 

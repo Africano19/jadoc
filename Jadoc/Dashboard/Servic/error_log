@@ -1,0 +1,25 @@
+[01-Apr-2022 07:37:11 UTC] PHP Warning:  include(../config.php): failed to open stream: No such file or directory in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 49
+[01-Apr-2022 07:37:11 UTC] PHP Warning:  include(../config.php): failed to open stream: No such file or directory in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 49
+[01-Apr-2022 07:37:11 UTC] PHP Warning:  include(): Failed opening '../config.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 49
+[01-Apr-2022 07:37:11 UTC] PHP Notice:  Undefined variable: con in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 52
+[01-Apr-2022 07:37:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 52
+[01-Apr-2022 07:37:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/active-users.php on line 52
+[01-Apr-2022 07:38:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:38:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:38:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:38:25 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:38:28 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:38:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:39:58 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:40:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 07:40:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 09:03:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 09:03:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 09:51:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 11:16:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 11:16:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 11:16:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[01-Apr-2022 11:16:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
