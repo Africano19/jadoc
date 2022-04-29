@@ -183,141 +183,140 @@
               </div>
               <!-- /app-Header -->
 
-            <!--APP-SIDEBAR-->
-            <div class="sticky">
-                <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
-                <div class="app-sidebar">
-                    <div class="side-header">
-                        <a class="header-brand1" href="index.html">
-                            <img src="../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
-                            <img src="../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-                            <img src="../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
-                        </a>
-                        <!-- LOGO -->
-                    </div>
-                    <div class="main-sidemenu">
-                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
-                            </svg></div>
+              <!--APP-SIDEBAR-->
+             <div class="sticky">
+                 <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                 <div class="app-sidebar">
+                     <div class="side-header">
+                         <a class="header-brand1" href="dashboard.php">
+                             <img src=" ../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                             <img src=" ../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+                             <img src=" ../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                             <img src=" ../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+                         </a>
+                         <!-- LOGO -->
+                     </div>
+                     <div class="main-sidemenu">
+                         <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                 <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+                             </svg></div>
 
 
-                            <ul class="side-menu">
-                                <li class="sub-category">
-                                    <h3>Main</h3>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="../dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
-                                </li>
+                             <ul class="side-menu">
+                                 <li class="sub-category">
+                                     <h3>Main</h3>
+                                 </li>
+                                 <li class="slide">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="../dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
+                                 </li>
+                                 <li class="slide">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
+                                 </li>
+                                 <li class="slide">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="../notes.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                 </li>
+
+                             <div  id="Servicos">
+                               <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+                                 <li class="sub-category" id="title_service">
+                                     <h3>SERVIÇOS</h3>
+                                 </li>
+                                 <li class="slide" id="service1">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-slack"></i><span class="side-menu__label">Casos</span><i class="angle fe fe-chevron-right"></i></a>
+                                     <ul class="slide-menu">
+                                         <li class="side-menu-label1"><a href="javascript:void(0)">Casos</a></li>
+                                         <li><a href="servicos.php#open" class="slide-item"> Abertos</a><span class="badge bg-primary side-badge">18</span></li>
+                                         <li><a href="servicos.php#pendent" class="slide-item"> Pendentes</a><span class="badge bg-primary side-badge">24</span></li>
+                                         <li><a href="servicos.php#waitpaying" class="slide-item"> Por Pagar</a><span class="badge bg-primary side-badge">8</span></li>
+                                         <li><a href="servicos.php#closed" class="slide-item"> Finalizados</a><span class="badge bg-primary side-badge">247</span></li>
+                                     </ul>
+
+                                 </li>
+                                 <li class="slide" id="service2">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
+                                         <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
+                                     <ul class="slide-menu">
+                                         <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                         <li><a href="active-users.php" class="slide-item"> Ativos</a></li>
+                                         <li><a href="inactive-users.php" class="slide-item"> Inativos</a></li>
+                                     </ul>
+                                 </li>
+
+                             </div>
 
 
+                             <div id="Contabilidade">
+                                 <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+                                 <li class="sub-category" id="title_contab">
+                                     <h3>CONTABILIDADE</h3>
+                                 </li>
+                                 <li class="slide" id="contab1">
+                                 <li class="slide" id="contab2">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive-fill"></i><span class="side-menu__label">Organizada</span><i class="angle fe fe-chevron-right"></i></a>
+                                     <ul class="slide-menu">
+                                         <li class="side-menu-label1"><a href="javascript:void(0)">Organizada</a></li>
+                                         <li><a href="#" class="slide-item"> # </a></li>
+                                         <li><a href="#" class="slide-item"> # </a></li>
+                                     </ul>
+
+                                 </li>
+                                 <li class="slide" id="contab3">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive"></i>
+                                         <span class="side-menu__label">Não Organizada</span><i class="angle fe fe-chevron-right"></i></a>
+                                     <ul class="slide-menu">
+                                         <li class="side-menu-label1"><a href="javascript:void(0)">Não Organizada</a></li>
+                                         <li><a href="#" class="slide-item"> # </a></li>
+                                         <li><a href="#" class="slide-item"> # </a></li>
+                                     </ul>
+                                 </li>
+                                 <li class="slide" id="contab4">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
+                                         <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
+                                     <ul class="slide-menu">
+                                         <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
+                                         <li><a href="#" class="slide-item"> Ativos</a></li>
+                                         <li><a href="#" class="slide-item"> Inativos</a></li>
+                                     </ul>
+                                 </li>
+
+                             </div>
+
+                             <div id="Gestao">
+                                 <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+                                 <li class="sub-category" id="adm_title">
+                                     <h3>GESTÃO</h3>
+                                 </li>
+                                 <li class="slide" >
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                                 </li>
+                                 <li class="slide" >
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="../user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                                 </li>
+                             </div>
+
+                             <div id="Adm">
+                                 <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+                                 <li class="sub-category" id="adm_title">
+                                     <h3>Administração</h3>
+                                 </li>
+                                 <li class="slide" >
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-globe"></i><span class="side-menu__label">LandingPage</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                                 </li>
+                                 <li class="slide">
+                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                                 </li>
+                             </div>
 
 
-                            <div  id="Servicos">
-
-                                <li class="sub-category" id="title_service">
-                                    <h3>SERVIÇOS</h3>
-                                </li>
-                                <li class="slide" id="service1">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-slack"></i><span class="side-menu__label">Casos</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Casos</a></li>
-                                        <li><a href="servicos.php#open" class="slide-item"> Abertos</a><span class="badge bg-primary side-badge">18</span></li>
-                                        <li><a href="servicos.php#pendent" class="slide-item"> Pendentes</a><span class="badge bg-primary side-badge">24</span></li>
-                                        <li><a href="servicos.php#waitpaying" class="slide-item"> Por Pagar</a><span class="badge bg-primary side-badge">8</span></li>
-                                        <li><a href="servicos.php#closed" class="slide-item"> Finalizados</a><span class="badge bg-primary side-badge">247</span></li>
-                                    </ul>
-
-                                </li>
-                                <li class="slide" id="service2">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
-                                        <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
-                                        <li><a href="active-users.php" class="slide-item"> Ativos</a></li>
-                                        <li><a href="inactive-users.php" class="slide-item"> Inativos</a></li>
-                                    </ul>
-                                </li>
-
-                            </div>
+                             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                     <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+                                 </svg></div>
+                             </ul>
 
 
-                            <div id="Contabilidade">
-
-                                <li class="sub-category" id="title_contab">
-                                    <h3>CONTABILIDADE</h3>
-                                </li>
-                                <li class="slide" id="contab1">
-                                <li class="slide" id="contab2">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive-fill"></i><span class="side-menu__label">Organizada</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Organizada</a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                    </ul>
-
-                                </li>
-                                <li class="slide" id="contab3">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive"></i>
-                                        <span class="side-menu__label">Não Organizada</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Não Organizada</a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                    </ul>
-                                </li>
-                                <li class="slide" id="contab4">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
-                                        <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
-                                        <li><a href="#" class="slide-item"> Ativos</a></li>
-                                        <li><a href="#" class="slide-item"> Inativos</a></li>
-                                    </ul>
-                                </li>
-
-                            </div>
-
-                            <div id="Gestao">
-                                <li class="sub-category" id="adm_title">
-                                    <h3>GESTÃO</h3>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="../user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                            </div>
-
-                            <div id="Adm">
-                                <li class="sub-category" id="adm_title">
-                                    <h3>Administração</h3>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-globe"></i><span class="side-menu__label">LandingPage</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                            </div>
-
-
-                            <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
-                                    <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
-                                </svg></div>
-                            </ul>
-
-
-                            </div>
-                            </div>
-                            <!--/APP-SIDEBAR-->
+                             </div>
+                             </div>
+                             <!--/APP-SIDEBAR-->
             </div>
 
             <!--app-content open-->
@@ -440,35 +439,36 @@
     <!--JS ocultar consoante o tipo de user-->
     <script>
 
-        <?php
-        if($type==4){
-        ?>
-            document.getElementById("Adm").style.display = "none";
-        <?php
+    <?php
+    if($type==4){
+    ?>
+        document.getElementById("Admin").style.display = "none";
+    <?php
 
-        } else if($type==3){
+    } else if($type==3){
 
-        ?>
-            document.getElementById("Contabilidade").style.display = "none";
-            document.getElementById("Gestao").style.display = "none";
-            document.getElementById("contab_dash").style.display = "none";
-            document.getElementById("Adm").style.display = "none";
+    ?>
+        document.getElementById("Contabilidade").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+        document.getElementById("Adm").style.display = "none";
+        document.getElementById("contab_dash").style.display = "none";
 
-        <?php
+    <?php
 
-        } else if($type==2){
+    } else if($type==2){
 
-        ?>
-            document.getElementById("Servicos").style.display = "none";
-            document.getElementById("Gestao").style.display = "none";
-            document.getElementById("Services_Dash").style.display = "none";
-            document.getElementById("Services_table_Dash").style.display = "none";
-            document.getElementById("Adm").style.display = "none";
-        <?php
+    ?>
+        document.getElementById("Servicos").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+        document.getElementById("Adm").style.display = "none";
+        document.getElementById("Services_Dash").style.display = "none";
+        document.getElementById("Services_table_Dash").style.display = "none";
 
-        }
+    <?php
 
-        ?>
+    }
+
+    ?>
 
     </script>
 

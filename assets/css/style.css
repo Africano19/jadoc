@@ -17,7 +17,7 @@
 
 -----------------------------------------------------------------------------------*/
 /*===========================
-    1. COMMON css 
+    1. COMMON css
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");
 body {
@@ -468,7 +468,7 @@ p {
     transform: rotate(-130deg); } }
 
 /*===========================
-    2.HEADER css 
+    2.HEADER css
 ===========================*/
 .header-area {
   position: relative; }
@@ -556,8 +556,7 @@ p {
 .navbar {
   padding: 0;
   position: relative; }
-  .navbar .navbar-brand img {
-    max-width: 112px; }
+  .navbar .navbar-brand img {}
   .navbar .navbar-toggler .toggler-icon {
     width: 30px;
     height: 2px;
@@ -681,7 +680,7 @@ p {
         transform: translateY(-50%); }
 
 /*===========================
-    3.ABOUT css 
+    3.ABOUT css
 ===========================*/
 @media (max-width: 767px) {
   .about-area {
@@ -802,7 +801,7 @@ p {
       font-size: 26px; } }
 
 /*===========================
-      4.SERVICES css 
+      4.SERVICES css
 ===========================*/
 @media (max-width: 767px) {
   .services-area {
@@ -849,7 +848,7 @@ p {
       color: #fff; }
 
 /*===========================
-      5.PROJECT css 
+      5.PROJECT css
 ===========================*/
 @media (max-width: 767px) {
   .project-area {
@@ -941,7 +940,7 @@ p {
       background-color: #EB3656; }
 
 /*===========================
-        6.TEAM css 
+        6.TEAM css
 ===========================*/
 @media (max-width: 767px) {
   .team-area {
@@ -1021,7 +1020,7 @@ p {
     visibility: visible; }
 
 /*===========================
-      7.TESTIMONIAL css 
+      7.TESTIMONIAL css
 ===========================*/
 .testimonial-area {
   position: relative; }
@@ -1125,7 +1124,7 @@ p {
       width: 25px; }
 
 /*===========================
-       8.CONTACT css 
+       8.CONTACT css
 ===========================*/
 @media (max-width: 767px) {
   .contact-area {
@@ -1175,7 +1174,7 @@ p.form-message.error {
   color: #f00; }
 
 /*===========================
-         9.MAP css 
+         9.MAP css
 ===========================*/
 .map-area {
   position: relative;
@@ -1216,7 +1215,7 @@ p.form-message.error {
   right: 0; }
 
 /*===========================
-       10.FOOTER css 
+       10.FOOTER css
 ===========================*/
 @media (max-width: 767px) {
   .footer-widget {

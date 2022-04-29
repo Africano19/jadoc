@@ -674,3 +674,210 @@
 [06-Apr-2022 21:01:36 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 582
 [06-Apr-2022 21:01:36 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 587
 [06-Apr-2022 21:01:36 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[07-Apr-2022 09:34:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:22:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:58:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:59:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:59:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:59:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 07:59:58 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:12:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:16:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:16:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:21:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:22:03 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:22:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:24:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:27:06 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 63
+[08-Apr-2022 08:28:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:28:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:28:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:30:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:30:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:33:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:33:09 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[08-Apr-2022 08:33:09 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 589
+[08-Apr-2022 08:33:09 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 594
+[08-Apr-2022 08:33:09 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 604
+[08-Apr-2022 08:35:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 08:38:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:03:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:03:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:08:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:09:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:14:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:23:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 09:49:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 10:09:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 10:21:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 10:35:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 10:35:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:06:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:08:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:22:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:22:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:30:03 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:52:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:52:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:58:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 11:58:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:04:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:09:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:09:58 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:10:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:13:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:13:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:15:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:15:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:15:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:17:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:17:48 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[08-Apr-2022 12:17:48 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 589
+[08-Apr-2022 12:17:48 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 594
+[08-Apr-2022 12:17:48 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 604
+[08-Apr-2022 12:17:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:20:25 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:21:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:21:54 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:21:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:22:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:22:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:22:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:26:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:31:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:33:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:34:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:35:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:37:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:38:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:39:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:39:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:43:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:44:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:47:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:53:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:54:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:54:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:54:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[08-Apr-2022 12:57:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:46:16 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:48:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:48:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:51:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:52:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:52:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:52:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:53:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:53:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 15:54:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 20:09:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[09-Apr-2022 20:09:55 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/notes.php on line 57
+[09-Apr-2022 20:09:55 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/notes.php on line 453
+[09-Apr-2022 20:09:55 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/notes.php on line 458
+[09-Apr-2022 20:09:55 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/notes.php on line 468
+[18-Apr-2022 15:33:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[18-Apr-2022 15:34:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[18-Apr-2022 15:34:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[21-Apr-2022 08:12:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 08:47:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:00:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:01:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:03:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:03:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:03:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:06:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[22-Apr-2022 09:08:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[25-Apr-2022 17:30:16 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 12:15:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 12:15:45 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[26-Apr-2022 12:15:45 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[26-Apr-2022 12:15:45 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[26-Apr-2022 12:15:45 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[26-Apr-2022 14:35:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:35:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:35:21 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[26-Apr-2022 14:35:21 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[26-Apr-2022 14:35:21 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[26-Apr-2022 14:35:21 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[26-Apr-2022 14:37:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:38:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:40:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:40:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 14:41:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 15:03:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[26-Apr-2022 15:03:33 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[26-Apr-2022 15:03:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[26-Apr-2022 15:03:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[26-Apr-2022 15:03:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 07:56:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 07:56:15 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 07:56:15 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 07:56:15 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 07:56:15 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 07:56:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 07:56:27 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 07:56:27 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 07:56:27 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 07:56:27 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 09:13:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 09:37:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 09:37:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 09:37:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 09:38:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 09:41:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 10:50:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 10:50:38 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 10:50:38 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 10:50:38 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 10:50:38 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 10:50:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 10:50:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 10:50:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 11:44:28 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 11:44:28 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 11:44:28 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 11:44:28 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 11:44:28 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 11:44:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 11:46:03 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 11:46:03 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 11:46:03 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 11:46:03 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 11:46:03 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 12:31:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 12:31:33 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 51
+[27-Apr-2022 12:31:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 592
+[27-Apr-2022 12:31:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 597
+[27-Apr-2022 12:31:33 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/dashboard.php on line 607
+[27-Apr-2022 14:17:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:17:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:19:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:19:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:20:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:20:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:21:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:21:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:21:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:22:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:23:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:23:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:24:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:25:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:26:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:34:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:34:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:34:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:37:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:37:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:16 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:38:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2

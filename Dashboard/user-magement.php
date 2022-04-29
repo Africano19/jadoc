@@ -57,6 +57,13 @@
                         $user=$dados['Name'];
                         $type=$dados['Tipo_User'];
                     }
+                    if($type==1){
+                      echo "<script>alert('Área Reservada!! Não Têm Permissões para isso!')</script>";
+                      echo"<script language='JavaScript' type='text/javascript'>
+                      setTimeout('window.history.go(-1)',0);
+                      </script>";
+
+                    }
                 }
                 else
                 {
@@ -212,12 +219,12 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                <a class="side-menu__item" data-bs-toggle="slide" href="notes.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                             </li>
 
 
 
-
+                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                         <div  id="Servicos">
 
                             <li class="sub-category" id="title_service">
@@ -246,7 +253,7 @@
 
                         </div>
 
-
+                        <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                         <div id="Contabilidade">
 
                             <li class="sub-category" id="title_contab">
@@ -282,7 +289,7 @@
                             </li>
 
                         </div>
-
+                        <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                         <div id="Gestao">
                             <li class="sub-category" id="adm_title">
                                 <h3>GESTÃO</h3>
@@ -294,7 +301,7 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                             </li>
                         </div>
-
+                        <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                         <div id="Adm">
                             <li class="sub-category" id="adm_title">
                                 <h3>Administração</h3>

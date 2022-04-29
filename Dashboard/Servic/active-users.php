@@ -212,14 +212,11 @@
                                     <a class="side-menu__item" data-bs-toggle="slide" href="../calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
                                 </li>
                                 <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="#"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="../notes.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
                                 </li>
 
-
-
-
                             <div  id="Servicos">
-
+                              <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="title_service">
                                     <h3>SERVIÇOS</h3>
                                 </li>
@@ -248,7 +245,7 @@
 
 
                             <div id="Contabilidade">
-
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="title_contab">
                                     <h3>CONTABILIDADE</h3>
                                 </li>
@@ -284,6 +281,7 @@
                             </div>
 
                             <div id="Gestao">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="adm_title">
                                     <h3>GESTÃO</h3>
                                 </li>
@@ -296,6 +294,7 @@
                             </div>
 
                             <div id="Adm">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="adm_title">
                                     <h3>Administração</h3>
                                 </li>
@@ -440,35 +439,36 @@
     <!--JS ocultar consoante o tipo de user-->
     <script>
 
-        <?php
-        if($type==4){
-        ?>
-            document.getElementById("Adm").style.display = "none";
-        <?php
+    <?php
+    if($type==4){
+    ?>
+        document.getElementById("Admin").style.display = "none";
+    <?php
 
-        } else if($type==3){
+    } else if($type==3){
 
-        ?>
-            document.getElementById("Contabilidade").style.display = "none";
-            document.getElementById("Gestao").style.display = "none";
-            document.getElementById("contab_dash").style.display = "none";
-            document.getElementById("Adm").style.display = "none";
+    ?>
+        document.getElementById("Contabilidade").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+        document.getElementById("Adm").style.display = "none";
+        document.getElementById("contab_dash").style.display = "none";
 
-        <?php
+    <?php
 
-        } else if($type==2){
+    } else if($type==2){
 
-        ?>
-            document.getElementById("Servicos").style.display = "none";
-            document.getElementById("Gestao").style.display = "none";
-            document.getElementById("Services_Dash").style.display = "none";
-            document.getElementById("Services_table_Dash").style.display = "none";
-            document.getElementById("Adm").style.display = "none";
-        <?php
+    ?>
+        document.getElementById("Servicos").style.display = "none";
+        document.getElementById("Gestao").style.display = "none";
+        document.getElementById("Adm").style.display = "none";
+        document.getElementById("Services_Dash").style.display = "none";
+        document.getElementById("Services_table_Dash").style.display = "none";
 
-        }
+    <?php
 
-        ?>
+    }
+
+    ?>
 
     </script>
 

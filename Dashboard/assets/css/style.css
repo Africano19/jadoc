@@ -3,7 +3,7 @@
 [Master Stylesheet]
 
 Project        :   sash – Bootstrap 5  Admin & Dashboard Template
-Copyright      :   Spruko Technologies Private Limited 
+Copyright      :   Spruko Technologies Private Limited
 Author         :   Spruko
 Author URL     :   https://themeforest.net/user/spruko
 Support	       :   support@spruko.com
@@ -18521,8 +18521,6 @@ div.DTE div.DTE_Processing_Indicator:after {
   } */
 .navbar .navbar-brand {
     position: relative;
-    height: 50px;
-    line-height: 30px;
     color: inherit;
     padding: 10px 15px;
 }
@@ -18573,7 +18571,7 @@ div.DTE div.DTE_Processing_Indicator:after {
     margin-right: 3px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px !important) {
     .navbar .navbar-brand {
         height: 50px;
         padding: 10px 15px;
@@ -44843,7 +44841,7 @@ table.table-bordered.dataTable thead tr:first-child td {
 }
 
 .bg-login{
-    
+
     height: 100%;
     width: 100%;
     background-position: center;
@@ -44851,7 +44849,7 @@ table.table-bordered.dataTable thead tr:first-child td {
     background-image: url("../images/media/pexels-c%C3%A1tia-matos-1072179.jpg");
     background-size: cover;
     display: inline-table;
-    
+
 }
 
 @media screen and (max-width: 335px) {

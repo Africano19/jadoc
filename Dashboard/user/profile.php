@@ -20,17 +20,17 @@
     <title>JA DOC - DASHBOARD</title>
     <?php session_start();?>
     <!-- BOOTSTRAP CSS -->
-    <link id="style" href=" assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="style" href=" ../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
 
 
     <!--- FONT-ICONS CSS -->
-    <link href=" assets/css/icons.css" rel="stylesheet" />
+    <link href=" ../assets/css/icons.css" rel="stylesheet" />
 
     <!-- COLOR SKIN CSS -->
-    <link id="theme" rel="stylesheet" type="text/css" media="all" href=" assets/colors/color1.css" />
+    <link id="theme" rel="stylesheet" type="text/css" media="all" href=" ../assets/colors/color1.css" />
 
 </head>
 
@@ -38,7 +38,7 @@
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">
-        <img src=" assets/images/loader.svg" class="loader-img" alt="Loader">
+        <img src=" ../assets/images/loader.svg" class="loader-img" alt="Loader">
     </div>
     <!-- /GLOBAL-LOADER -->
 
@@ -47,7 +47,7 @@
         <div class="page-main">
             <!--Conexão a base de dadps para a verificação de conta iniciada-->
             <?php
-                Include('../config.php');
+                Include('../../config.php');
                 $id= $_SESSION["ID"];
                 $sql= "SELECT * FROM users where ID_User= '".$id."'";
                 $result= mysqli_query($con,$sql) or die("Sql Error".mysql_error());
@@ -59,12 +59,11 @@
                         $type=$dados['Tipo_User'];
                         $email=$dados['Username'];
                     }
-                    if($type==1){
+                    if($type!=1){
                       echo "<script>alert('Área Reservada!! Não Têm Permissões para isso!')</script>";
                       echo"<script language='JavaScript' type='text/javascript'>
                       setTimeout('window.history.go(-1)',0);
                       </script>";
-
                     }
                 }
                 else
@@ -74,113 +73,90 @@
                     echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
                 }
 
-            ?>
+                ?>
 
-            <!-- app-Header -->
-            <div class="app-header header sticky">
-                <div class="container-fluid main-container">
-                    <div class="d-flex">
-                        <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
-                        <!-- sidebar-toggle-->
-                        <a class="logo-horizontal " href="dashboard.php">
-                            <img src=" assets/images/brand/logo-1.png" class="header-brand-img light-logo1" style="width: 50 px; height: 50px;" alt="logo">
-                        </a>
-                        <!-- LOGO -->
-                        <div class="main-header-center ms-3 d-none d-lg-block">
-                            <input class="form-control" placeholder="Search for results..." type="search">
-                            <button class="btn px-0 pt-2"><i class="fe fe-search" aria-hidden="true"></i></button>
-                        </div>
-                        <div class="d-flex order-lg-2 ms-auto header-right-icons">
-                            <div class="dropdown d-none">
-                                <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
-                                    <i class="fe fe-search"></i>
-                                </a>
-                                <div class="dropdown-menu header-search dropdown-menu-start">
-                                    <div class="input-group w-100 p-2">
-                                        <input type="text" class="form-control" placeholder="Search....">
-                                        <div class="input-group-text btn btn-primary">
-                                            <i class="fe fe-search" aria-hidden="true"></i>
+                <!-- app-Header -->
+                <div class="app-header header sticky" id="hate-u">
+                    <div class="container-fluid main-container">
+                        <div class="d-flex">
+                            <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)"></a>
+                            <!-- sidebar-toggle-->
+                            <a class="logo-horizontal " href="dashboard.php">
+                                <img src=" ../assets/images/brand/logo-1.png" class="header-brand-img light-logo1" style="width: 50 px; height: 50px;" alt="logo">
+                            </a>
+                            <!-- LOGO -->
+                            <div class="d-flex order-lg-2 ms-auto header-right-icons">
+                                <div class="dropdown d-none">
+                                    <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
+                                        <i class="fe fe-search"></i>
+                                    </a>
+                                    <div class="dropdown-menu header-search dropdown-menu-start">
+                                        <div class="input-group w-100 p-2">
+                                            <input type="text" class="form-control" placeholder="Search....">
+                                            <div class="input-group-text btn btn-primary">
+                                                <i class="fe fe-search" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- SEARCH -->
-                            <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon fe fe-more-vertical"></span>
-                            </button>
-                            <div class="navbar navbar-collapse responsive-navbar p-0">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-                                    <div class="d-flex order-lg-2">
-                                        <div class="dropdown d-lg-none d-flex">
-                                            <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
-                                                <i class="fe fe-search"></i>
-                                            </a>
-                                            <div class="dropdown-menu header-search dropdown-menu-start">
-                                                <div class="input-group w-100 p-2">
-                                                    <input type="text" class="form-control" placeholder="Search....">
-                                                    <div class="input-group-text btn btn-primary">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dropdown  d-flex notifications">
-                                            <a class="nav-link icon" data-bs-toggle="dropdown"><i class="fe fe-bell"></i><span class=" pulse"></span>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                <div class="drop-heading border-bottom">
-                                                    <div class="d-flex">
-                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Notifications
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                                <div class="notifications-menu">
-                                                    <a class="dropdown-item d-flex" href="#">
-                                                        <div class="me-3 notifyimg  bg-primary brround box-shadow-primary">
-                                                            <i class="fe fe-mail"></i>
-                                                        </div>
-                                                        <div class="mt-1 wd-80p">
-                                                            <h5 class="notification-label mb-1">Novos casos por aprovar.
-                                                            </h5>
-                                                            <span class="notification-subtext">Ontem</span>
-                                                        </div>
-                                                    </a>
-                                                    <a class="dropdown-item d-flex" href="#">
-                                                        <div class="me-3 notifyimg  bg-primary brround box-shadow-primary">
-                                                            <i class="bi bi-exclamation-triangle"></i>
-                                                        </div>
-                                                        <div class="mt-1 wd-80p">
-                                                            <h5 class="notification-label mb-1">Faltam 3 dias para o fim do limite de entrega dos sfats.
-                                                            </h5>
-                                                            <span class="notification-subtext">Hoje</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <a href="#" class="dropdown-item text-center p-3 text-muted">Ver Mais
-                                                    Notificações</a>
-                                            </div>
-                                        </div>
-                                        <!-- NOTIFICATIONS -->
-                                        <!-- SIDE-MENU -->
-                                        <div class="dropdown d-flex profile-1">
-                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link leading-none d-flex">
-                                                <img src=" assets/images/brand/logo-2.png" alt="profile-user" class="avatar  profile-user brround cover-image">
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                                <div class="drop-heading">
-                                                    <div class="text-center">
-                                                        <?php echo "<h5 class'text-dark mb-0 fs-14 fw-semibold'>&nbsp".utf8_encode($user)."</h5>"; ?>
-                                                    </div>
-                                                </div>
-                                                <div class="dropdown-divider m-0"></div>
-                                                <a class="dropdown-item" href="#">
-                                                    <i class="dropdown-icon fe fe-user"></i> Prefil
+                                <!-- SEARCH -->
+                                <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon fe fe-more-vertical"></span>
+                                </button>
+                                <div class="navbar navbar-collapse responsive-navbar p-0">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                                        <div class="d-flex order-lg-2">
+                                            <div class="dropdown d-lg-none d-flex">
+                                                <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
+                                                    <i class="fe fe-search"></i>
                                                 </a>
-                                                <a class="dropdown-item" href="logout.php">
-                                                    <i class="dropdown-icon fe fe-alert-circle"></i> Sair
-                                                </a>
+                                                <div class="dropdown-menu header-search dropdown-menu-start">
+                                                    <div class="input-group w-100 p-2">
+                                                        <input type="text" class="form-control" placeholder="Search....">
+                                                        <div class="input-group-text btn btn-primary">
+                                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="dropdown  d-flex notifications">
+                                                <a class="nav-link icon" data-bs-toggle="dropdown"><i class="fe fe-bell"></i><span class=" pulse"></span>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                    <div class="drop-heading border-bottom">
+                                                        <div class="d-flex">
+                                                            <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Notifications
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notifications-menu">
+                                                        <a class="dropdown-item d-flex" href="#">
+                                                            <div class="me-3 notifyimg  bg-primary brround box-shadow-primary">
+                                                                <i class="fe fe-mail"></i>
+                                                            </div>
+                                                            <div class="mt-1 wd-80p">
+                                                                <h5 class="notification-label mb-1">Novos casos por aprovar.
+                                                                </h5>
+                                                                <span class="notification-subtext">Ontem</span>
+                                                            </div>
+                                                        </a>
+                                                        <a class="dropdown-item d-flex" href="#">
+                                                            <div class="me-3 notifyimg  bg-primary brround box-shadow-primary">
+                                                                <i class="bi bi-exclamation-triangle"></i>
+                                                            </div>
+                                                            <div class="mt-1 wd-80p">
+                                                                <h5 class="notification-label mb-1">Faltam 3 dias para o fim do limite de entrega dos sfats.
+                                                                </h5>
+                                                                <span class="notification-subtext">Hoje</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="dropdown-divider m-0"></div>
+                                                    <a href="#" class="dropdown-item text-center p-3 text-muted">Ver Mais
+                                                        Notificações</a>
+                                                </div>
+                                            </div>
+                                            <!-- NOTIFICATIONS -->
                                         </div>
                                     </div>
                                 </div>
@@ -188,145 +164,61 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- /app-Header -->
+                <!-- /app-Header -->
 
-            <!--APP-SIDEBAR-->
-            <div class="sticky">
-                <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
-                <div class="app-sidebar">
-                    <div class="side-header">
-                        <a class="header-brand1" href="dashboard.php">
-                            <img src=" assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
-                            <img src=" assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
-                        </a>
-                        <!-- LOGO -->
-                    </div>
-                    <div class="main-sidemenu">
-                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
-                            </svg></div>
+                <!--APP-SIDEBAR-->
+                <div class="sticky" id="hate-u2">
+                    <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                    <div class="app-sidebar">
+                        <div class="side-header">
+                            <a class="header-brand1" href="dashboard.php">
+                                <img src=" ../assets/images/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                                <img src=" ../assets/images/brand/logo-1.png" class="header-brand-img toggle-logo" alt="logo">
+                                <img src=" ../assets/images/brand/logo-2.png" class="header-brand-img light-logo" alt="logo">
+                                <img src=" ../assets/images/brand/logo-3.png" class="header-brand-img light-logo1" alt="logo">
+                            </a>
+                            <!-- LOGO -->
+                        </div>
+                        <div class="main-sidemenu">
+                            <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+                                </svg></div>
 
 
                             <ul class="side-menu">
-                                <li class="sub-category">
-                                    <h3>Main</h3>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboard</span></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="calendar.php"><i class="side-menu__icon bi bi-calendar2-week-fill"></i><span class="side-menu__label">Agenda</span></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="notes.php"><i class="side-menu__icon bi bi-journal-bookmark-fill"></i><span class="side-menu__label">As Minhas Notas</span></a>
-                                </li>
-
-
-
-                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div  id="Servicos">
-
-                                <li class="sub-category" id="title_service">
-                                    <h3>SERVIÇOS</h3>
-                                </li>
-                                <li class="slide" id="service1">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-slack"></i><span class="side-menu__label">Casos</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Casos</a></li>
-                                        <li><a href="Servic/servicos.php#open" class="slide-item"> Abertos</a><span class="badge bg-primary side-badge">18</span></li>
-                                        <li><a href="Servic/servicos.php#pendent" class="slide-item"> Pendentes</a><span class="badge bg-primary side-badge">24</span></li>
-                                        <li><a href="Servic/servicos.php#waitpaying" class="slide-item"> Por Pagar</a><span class="badge bg-primary side-badge">8</span></li>
-                                        <li><a href="Servic/servicos.php#closed" class="slide-item"> Finalizados</a><span class="badge bg-primary side-badge">247</span></li>
-                                    </ul>
-
-                                </li>
-                                <li class="slide" id="service2">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
-                                        <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
-                                        <li><a href="Servic/active-users.php" class="slide-item"> Ativos</a></li>
-                                        <li><a href="Servic/inactive-users.php" class="slide-item"> Inativos</a></li>
-                                    </ul>
-                                </li>
-
-                            </div>
-
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div id="Contabilidade">
-
-                                <li class="sub-category" id="title_contab">
-                                    <h3>CONTABILIDADE</h3>
-                                </li>
-                                <li class="slide" id="contab1">
-                                <li class="slide" id="contab2">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive-fill"></i><span class="side-menu__label">Organizada</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Organizada</a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                    </ul>
-
-                                </li>
-                                <li class="slide" id="contab3">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-archive"></i>
-                                        <span class="side-menu__label">Não Organizada</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Não Organizada</a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                        <li><a href="#" class="slide-item"> # </a></li>
-                                    </ul>
-                                </li>
-                                <li class="slide" id="contab4">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-users"></i>
-                                        <span class="side-menu__label">Clientes</span><i class="angle fe fe-chevron-right"></i></a>
-                                    <ul class="slide-menu">
-                                        <li class="side-menu-label1"><a href="javascript:void(0)">Clientes</a></li>
-                                        <li><a href="#" class="slide-item"> Ativos</a></li>
-                                        <li><a href="#" class="slide-item"> Inativos</a></li>
-                                    </ul>
-                                </li>
-
-                            </div>
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div id="Gestao">
-                                <li class="sub-category" id="adm_title">
-                                    <h3>GESTÃO</h3>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon fe fe-folder"></i><span class="side-menu__label">Gestor de Ficheiros</span><span class="badge bg-primary side-badge">4</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                            </div>
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div id="Adm">
-                                <li class="sub-category" id="adm_title">
-                                    <h3>Administração</h3>
-                                </li>
-                                <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon bi bi-globe"></i><span class="side-menu__label">LandingPage</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                                <li class="slide">
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
-                                </li>
-                            </div>
+                              <br/>
+                                <li class="slide"><center>
+                                  <img src=" ../assets/images/users/user.png" alt="profile-user" class=" " style="width:50%; height:50%;">
+                                  <?php echo "<br/><br/><h3 style='color:#ffa4a4;font-weight: bold;'><span class='side-menu__label'>".utf8_encode($user)."</span></h3>"; ?>
+                                  <hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;">
+                                </center>
+                               </li>
+                               <li class="slide">
+                                   <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon bi bi-archive-fill"></i><span class="side-menu__label">Os meus Casos</span></a>
+                               </li>
+                               <li class="slide">
+                                   <a class="side-menu__item" data-bs-toggle="slide" href="profile.php"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">O Meu Perfil</span></a>
+                               </li>
+                               <li class="slide">
+                                   <a class="side-menu__item" data-bs-toggle="slide" href="dashboard.php"><i class="side-menu__icon bi bi-map-fill"></i><span class="side-menu__label">Serviços Próximos</span></a>
+                               </li>
+                               <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+                               <li class="slide">
+                                   <a class="side-menu__item" data-bs-toggle="slide" href="../logout.php"><i class="side-menu__icon bi bi-door-open-fill"></i><span class="side-menu__label">Terminar Sessão</span></a>
+                               </li>
+                            </ul>
 
 
                             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
                                     <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
                                 </svg></div>
-    </ul>
+
 
 
                         </div>
                     </div>
                     <!--/APP-SIDEBAR-->
-            </div>
+                </div>
 
             <!--app-content open-->
             <div class="main-content app-content mt-0">
@@ -337,11 +229,11 @@
 
                         <!-- PAGE-HEADER -->
                         <div class="page-header">
-                            <h1 class="page-title">Prefil</h1>
+                            <h1 class="page-title">Perfil</h1>
                             <div>
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="dashboard.php">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Prefil</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Perfil</li>
                                 </ol>
                             </div>
                         </div>
@@ -412,7 +304,41 @@
                                         <a href="javascript:void(0)" class="btn" style="background-color:#fff;">Cancelar</a>
                                     </div>
                                 </div>
+
+                                <div class="card panel-theme">
+                                    <div class="card-header">
+                                        <div class="float-start">
+                                            <h3 class="card-title">Contact</h3>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="card-body no-padding">
+                                        <ul class="list-group no-margin">
+                                            <li class="list-group-item d-flex ps-3">
+                                                <div class="social social-profile-buttons me-2">
+                                                    <a class="social-icon text-primary" href=""><i class="fe fe-mail"></i></a>
+                                                </div>
+                                                <a href="javascript:void(0)" class="my-auto">support@jadoc.pt</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ps-3">
+                                                <div class="social social-profile-buttons me-2">
+                                                    <a class="social-icon text-primary" href=""><i class="fe fe-globe"></i></a>
+                                                </div>
+                                                <a href="javascript:void(0)" class="my-auto">www.jadoc.pt</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ps-3">
+                                                <div class="social social-profile-buttons me-2">
+                                                    <a class="social-icon text-primary" href=""><i class="fe fe-phone"></i></a>
+                                                </div>
+                                                <a href="javascript:void(0)" class="my-auto">+351 913 205 793</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+
+
+
                             <div class="col-xl-8">
                                 <div class="card">
                                     <div class="card-header">
@@ -430,7 +356,19 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputnumber">Contacto Telefónico</label>
-                                            <input type="number" class="form-control" id="exampleInputnumber" placeholder="Contact number">
+                                            <input type="number" class="form-control" id="exampleInputnumber" placeholder="935415275">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputnumber">Morada</label>
+                                            <input type="text" class="form-control" id="exampleInputadress" placeholder="AV./ RUA/ PRAC./ ...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputnumber">Código Postal</label>
+                                            <input type="text" class="form-control" id="exampleInputZipCode" placeholder="0000-000">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputnumber">Cidade</label>
+                                            <input type="text" class="form-control" id="exampleInputZone" placeholder="ex: Lisboa">
                                         </div>
                                         <div class="form-group">
                                             <label class="form-label">Data de Nascimento</label>
@@ -533,7 +471,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                          </div>
                         <!-- ROW-1 CLOSED -->
 
 
@@ -599,78 +537,78 @@
       <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
 
         <!-- JQUERY JS -->
-        <script src=" assets/js/jquery.min.js"></script>
+        <script src=" ../assets/js/jquery.min.js"></script>
 
         <!-- BOOTSTRAP JS -->
-        <script src=" assets/plugins/bootstrap/js/popper.min.js"></script>
-        <script src=" assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src=" ../assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src=" ../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
         <!-- SPARKLINE JS-->
-        <script src=" assets/js/jquery.sparkline.min.js"></script>
+        <script src=" ../assets/js/jquery.sparkline.min.js"></script>
 
         <!-- Sticky js -->
-        <script src=" assets/js/sticky.js"></script>
+        <script src=" ../assets/js/sticky.js"></script>
 
         <!-- CHART-CIRCLE JS-->
-        <script src=" assets/js/circle-progress.min.js"></script>
+        <script src=" ../assets/js/circle-progress.min.js"></script>
 
         <!-- PIETY CHART JS-->
-        <script src=" assets/plugins/peitychart/jquery.peity.min.js"></script>
-        <script src=" assets/plugins/peitychart/peitychart.init.js"></script>
+        <script src=" ../assets/plugins/peitychart/jquery.peity.min.js"></script>
+        <script src=" ../assets/plugins/peitychart/peitychart.init.js"></script>
 
         <!-- SIDEBAR JS -->
-        <script src=" assets/plugins/sidebar/sidebar.js"></script>
+        <script src=" ../assets/plugins/sidebar/sidebar.js"></script>
 
         <!-- Perfect SCROLLBAR JS-->
-        <script src=" assets/plugins/p-scroll/perfect-scrollbar.js"></script>
-        <script src=" assets/plugins/p-scroll/pscroll.js"></script>
-        <script src=" assets/plugins/p-scroll/pscroll-1.js"></script>
+        <script src=" ../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+        <script src=" ../assets/plugins/p-scroll/pscroll.js"></script>
+        <script src=" ../assets/plugins/p-scroll/pscroll-1.js"></script>
 
         <!-- INTERNAL CHARTJS CHART JS-->
-        <script src=" assets/plugins/chart/Chart.bundle.js"></script>
-        <script src=" assets/plugins/chart/rounded-barchart.js"></script>
-        <script src=" assets/plugins/chart/utils.js"></script>
+        <script src=" ../assets/plugins/chart/Chart.bundle.js"></script>
+        <script src=" ../assets/plugins/chart/rounded-barchart.js"></script>
+        <script src=" ../assets/plugins/chart/utils.js"></script>
 
         <!-- INTERNAL SELECT2 JS -->
-        <script src=" assets/plugins/select2/select2.full.min.js"></script>
+        <script src=" ../assets/plugins/select2/select2.full.min.js"></script>
 
         <!-- INTERNAL Data tables js-->
-        <script src=" assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-        <script src=" assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-        <script src=" assets/plugins/datatable/dataTables.responsive.min.js"></script>
+        <script src=" ../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+        <script src=" ../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+        <script src=" ../assets/plugins/datatable/dataTables.responsive.min.js"></script>
 
         <!-- INTERNAL APEXCHART JS -->
-        <script src=" assets/js/apexcharts.js"></script>
-        <script src=" assets/plugins/apexchart/irregular-data-series.js"></script>
+        <script src=" ../assets/js/apexcharts.js"></script>
+        <script src=" ../assets/plugins/apexchart/irregular-data-series.js"></script>
 
         <!-- C3 CHART JS -->
-        <script src=" assets/plugins/charts-c3/d3.v5.min.js"></script>
-        <script src=" assets/plugins/charts-c3/c3-chart.js"></script>
+        <script src=" ../assets/plugins/charts-c3/d3.v5.min.js"></script>
+        <script src=" ../assets/plugins/charts-c3/c3-chart.js"></script>
 
         <!-- CHART-DONUT JS -->
-        <script src=" assets/js/charts.js"></script>
+        <script src=" ../assets/js/charts.js"></script>
 
         <!-- INTERNAL Flot JS -->
-        <script src=" assets/plugins/flot/jquery.flot.js"></script>
-        <script src=" assets/plugins/flot/jquery.flot.fillbetween.js"></script>
-        <script src=" assets/plugins/flot/chart.flot.sampledata.js"></script>
-        <script src=" assets/plugins/flot/dashboard.sampledata.js"></script>
+        <script src=" ../assets/plugins/flot/jquery.flot.js"></script>
+        <script src=" ../assets/plugins/flot/jquery.flot.fillbetween.js"></script>
+        <script src=" ../assets/plugins/flot/chart.flot.sampledata.js"></script>
+        <script src=" ../assets/plugins/flot/dashboard.sampledata.js"></script>
 
         <!-- INTERNAL Vector js -->
-        <script src=" assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-        <script src=" assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src=" ../assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+        <script src=" ../assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
         <!-- SIDE-MENU JS-->
-        <script src=" assets/plugins/sidemenu/sidemenu.js"></script>
+        <script src=" ../assets/plugins/sidemenu/sidemenu.js"></script>
 
         <!-- INTERNAL INDEX JS -->
-        <script src=" assets/js/index1.js"></script>
+        <script src=" ../assets/js/index1.js"></script>
 
         <!-- Color Theme js -->
-        <script src=" assets/js/themeColors.js"></script>
+        <script src=" ../assets/js/themeColors.js"></script>
 
         <!-- CUSTOM JS -->
-        <script src=" assets/js/custom.js"></script>
+        <script src=" ../assets/js/custom.js"></script>
 
 </body>
 

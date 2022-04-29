@@ -78,6 +78,7 @@
                            {
                                while($dados = mysqli_fetch_array($result)){
                                    $id=$dados['ID_User'];
+                                   $type=$dados['Tipo_User'];
                               if($dados['Ativo']==1){
                                   if (isset ($_SESSION["ID"])){
                             $_SESSION["ID"] = "$id";
@@ -86,22 +87,30 @@
                             $_SESSION["ID"] = "$id";
 
                             }
-                            $url = 'Dashboard/dashboard.php';
-                            echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
-                               }else if ($dados['Ativo']==0){
 
-                          //  echo "<script>alert( 'O Utilizador não está ativo');</script>";
-                            //$url = 'login.php';
-                          //  echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+                            if($type!=1){
+                              $url = 'Dashboard/dashboard.php';
+                              echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+                            }else {
+                              $url = 'Dashboard/user/dashboard.php';
+                              echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+                            }
+
+
+                          }else if ($dados['Ativo']==0){
+
+                          echo "<script>alert( 'O Utilizador não está ativo');</script>";
+                          $url = 'login.php';
+                          echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
                                }
                            }
                             }
                             else
                             {
                             {
-                                echo "document.getElementById('click2').click();";
-                                //$url = 'login.php';
-                          //  echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
+
+                                $url = 'login.php';
+                                echo'<META HTTP-EQUIV=Refresh CONTENT="0; URL='.$url.'">';
 
                             }
                         }
@@ -151,9 +160,9 @@
                                             <div class="text-begin pt-4">
                                                 <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Esqueci-me da Password</a></p>
                                             </div>
-                                            <input type='button' class="btn btn-danger mt-2" value='Danger alert' id='click2'>
+                                            <!--<input type='button' class="btn btn-danger mt-2" value='Danger alert' id='click2'>-->
                                             <div class="container-login100-form-btn">
-                                                <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id="but_submit" style="width: 100%;" onclick="error()"/>
+                                                <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id="but_submit" style="width: 100%;" />
                                             </div>
                                         </div>
 
@@ -175,7 +184,7 @@
 
     <script>
 
-    function error() {
+    /*function error() {
         swal({
             title: "User created!",
             text: "Suceess message sent!!",
@@ -183,7 +192,7 @@
             button: "Ok",
             timer: 20000000000000000000000000000000000000000000000000000000000000000000000000
         });
-    };
+    };*/
 
     </script>
 
