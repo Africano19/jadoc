@@ -226,9 +226,9 @@
 
 
 
-                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div  id="Servicos">
 
+                            <div  id="Servicos">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="title_service">
                                     <h3>SERVIÇOS</h3>
                                 </li>
@@ -255,9 +255,9 @@
 
                             </div>
 
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
-                            <div id="Contabilidade">
 
+                            <div id="Contabilidade">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="title_contab">
                                     <h3>CONTABILIDADE</h3>
                                 </li>
@@ -291,8 +291,9 @@
                                 </li>
 
                             </div>
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+
                             <div id="Gestao">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="adm_title">
                                     <h3>GESTÃO</h3>
                                 </li>
@@ -303,8 +304,9 @@
                                     <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Gerir Utilizadores</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                                 </li>
                             </div>
-                            <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
+
                             <div id="Adm">
+                                <center><hr style="height:5px;border-width:0;color:gray;background-color:#ffa4a4;width:50%;"></center>
                                 <li class="sub-category" id="adm_title">
                                     <h3>Administração</h3>
                                 </li>
@@ -574,8 +576,9 @@
             ?>
                 document.getElementById("Contabilidade").style.display = "none";
                 document.getElementById("Gestao").style.display = "none";
-                document.getElementById("contab_dash").style.display = "none";
                 document.getElementById("Adm").style.display = "none";
+                document.getElementById("contab_dash").style.display = "none";
+
 
             <?php
 
@@ -584,9 +587,10 @@
             ?>
                 document.getElementById("Servicos").style.display = "none";
                 document.getElementById("Gestao").style.display = "none";
+                document.getElementById("Adm").style.display = "none";
                 document.getElementById("Services_Dash").style.display = "none";
                 document.getElementById("Services_table_Dash").style.display = "none";
-                document.getElementById("Adm").style.display = "none";
+
             <?php
 
             }

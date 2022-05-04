@@ -165,10 +165,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="dropdown-divider m-0"></div>
-                                                <a class="dropdown-item" href="profile.php">
+                                                <a class="dropdown-item" href="../profile.php">
                                                     <i class="dropdown-icon fe fe-user"></i> Prefil
                                                 </a>
-                                                <a class="dropdown-item" href="logout.php">
+                                                <a class="dropdown-item" href="../logout.php">
                                                     <i class="dropdown-icon fe fe-alert-circle"></i> Sair
                                                 </a>
                                             </div>

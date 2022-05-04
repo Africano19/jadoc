@@ -68,3 +68,17 @@ Stack trace:
 [27-Apr-2022 14:32:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
 [27-Apr-2022 14:34:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
 [27-Apr-2022 14:38:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:52:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 14:52:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 15:04:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[27-Apr-2022 19:09:29 UTC] PHP Notice:  Undefined index: ID in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/servicos.php on line 51
+[27-Apr-2022 19:09:29 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/servicos.php on line 443
+[27-Apr-2022 19:09:29 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/servicos.php on line 448
+[27-Apr-2022 19:09:29 UTC] PHP Notice:  Undefined variable: type in /home/jadocpt/dashboard.jadoc.pt/Dashboard/Servic/servicos.php on line 458
+[28-Apr-2022 15:19:42 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 11:30:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 11:31:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 11:44:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 11:45:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 12:07:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2
+[29-Apr-2022 12:07:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/jadocpt/dashboard.jadoc.pt/config.php on line 2

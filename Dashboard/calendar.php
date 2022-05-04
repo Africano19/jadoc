@@ -311,7 +311,7 @@
                                     <h3>Administração</h3>
                                 </li>
                                 <li class="slide" >
-                                    <a class="side-menu__item" data-bs-toggle="slide" href="user-magement.php"><i class="side-menu__icon bi bi-globe"></i><span class="side-menu__label">LandingPage</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
+                                    <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-globe"></i><span class="side-menu__label">LandingPage</span><i class="angle fe fe-chevron-right hor-angle"></i></a>
                                 </li>
                                 <li class="slide">
                                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon bi bi-sliders"></i><span class="side-menu__label">Gerir Serviços</span><i class="angle fe fe-chevron-right hor-angle"></i></a>

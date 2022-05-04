@@ -15,7 +15,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../Dashboard/assets/images/brand/favicon.ico" />
 
     <!-- TITLE -->
-    <title>JA DOC - DASHBOARD</title>
+    <title>JA DOC - Documentação e Serviços </title>
     <?php session_start();?>
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="../Dashboard/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -163,6 +163,9 @@
                                             <!--<input type='button' class="btn btn-danger mt-2" value='Danger alert' id='click2'>-->
                                             <div class="container-login100-form-btn">
                                                 <input type=submit class="login100-form-btn btn-primary" value="Entrar" name="but_submit" id="but_submit" style="width: 100%;" />
+                                            </div>
+                                            <div class="text-center pt-3">
+                                                <p class="text-dark mb-0" >Ainda não é membro?<a href="register.php" class="text-primary ms-1">Registe-se aqui!</a></p>
                                             </div>
                                         </div>
 
