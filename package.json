@@ -1,9 +1,6 @@
 {
   "dependencies": {
-    "php": "^1.0.2",
-    "twig/extensions": "~1.0",
-    "ext-php_pdo_pgsql": "*",
-    "ext-php_pgsql": "*"
+    "php": "^1.0.2"
   }
-
+  
 }
