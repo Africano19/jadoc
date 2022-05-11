@@ -16,7 +16,7 @@
 
     <!-- TITLE -->
     <title>JA DOC - Documentação e Serviços </title>
-    <?php session_start();?>
+    
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="../Dashboard/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -54,7 +54,10 @@
         </symbol>
     </svg>
 
+
     <?php
+
+            /*
                 include "config.php";
 
                 if(isset($_POST['but_submit'])){
@@ -118,6 +121,7 @@
 
                 }
                 }
+                */
     ?>
 
 
