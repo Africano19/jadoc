@@ -4,7 +4,7 @@
     
     $conn = OpenCon();
 
-    echo '1!!';
+    echo 'exe!!';
 
 
 ?>
