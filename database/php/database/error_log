@@ -1,0 +1,199 @@
+[27-Apr-2022 07:28:02 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 09:56:36 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 09:57:01 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 09:59:43 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:09 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:12 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:12 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:13 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:14 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:15 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:00:16 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:01:04 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:01:05 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:02:29 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:05:17 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:25 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:27 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:28 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:29 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:31 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:45 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:45 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:47:47 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 6212? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:48:07 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:48:08 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:48:09 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:49:16 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:49:16 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:50:21 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:50:21 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:51:19 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:51:19 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:19 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:19 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:24 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:24 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:28 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:28 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:37 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:37 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:41 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:41 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:41 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:41 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:42 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:52:42 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:31 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:31 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:35 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:35 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:55 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:53:55 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:54:05 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:54:05 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:57:08 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 10:57:08 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:05:07 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-52-48-159-67.eu-west-1.compute.amazonaws.com&quot; (52.48.159.67) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:05:07 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:17:38 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-52-48-159-67.eu-west-1.compute.amazonaws.com&quot; (52.48.159.67) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:17:38 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:46:53 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:46:53 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:15:17 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:15:17 UTC] PHP Warning:  Attempt to read property "error" on bool in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:15:33 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:15:33 UTC] PHP Warning:  Attempt to read property "error" on bool in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:20:56 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:20:56 UTC] PHP Warning:  Attempt to read property "error" on bool in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:39:53 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:39:53 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:40:15 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 09:40:15 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 10:24:48 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 10:24:48 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:28:14 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:28:14 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:14 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:14 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:35 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:41 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:41 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:29:41 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:30:20 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:30:24 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:07 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:09 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:10 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:11 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:12 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:34 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:33:35 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:36:17 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:36:18 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[29-Apr-2022 12:36:19 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[01-May-2022 17:21:42 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: fe_sendauth: no password supplied in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[05-May-2022 19:10:30 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 5
+[05-May-2022 19:15:01 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 9
+[05-May-2022 19:15:12 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 9
+[05-May-2022 19:20:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08006] [7] timeout expired in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php:15
+Stack trace:
+#0 /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php(15): PDO->__construct('pgsql:host=ec2-...')
+#1 /home/jadocpt/postgisex.jadoc.pt/php/database/init_connection.php(4): OpenCon()
+#2 {main}
+  thrown in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[05-May-2022 19:26:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[08006] [7] timeout expired in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php:15
+Stack trace:
+#0 /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php(15): PDO->__construct('pgsql:host=ec2-...')
+#1 /home/jadocpt/postgisex.jadoc.pt/php/database/init_connection.php(4): OpenCon()
+#2 {main}
+  thrown in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:10:32 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:10:46 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:11:58 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:12:01 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:15:02 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:15:58 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:16:30 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15
+[06-May-2022 12:16:57 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-34-246-227-219.eu-west-1.compute.amazonaws.com&quot; (34.246.227.219) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 15

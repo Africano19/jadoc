@@ -1,0 +1,28 @@
+[22-Apr-2022 12:52:32 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[22-Apr-2022 12:52:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php on line 13
+[22-Apr-2022 12:52:32 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php on line 26
+[22-Apr-2022 12:52:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php:12
+Stack trace:
+#0 /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php(30): CloseCon(false)
+#1 {main}
+  thrown in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 12
+[26-Apr-2022 13:29:52 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[26-Apr-2022 13:29:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php on line 13
+[26-Apr-2022 13:29:52 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php on line 26
+[26-Apr-2022 13:29:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on bool in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php:12
+Stack trace:
+#0 /home/jadocpt/postgisex.jadoc.pt/php/authentication/login.php(30): CloseCon(false)
+#1 {main}
+  thrown in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 12
+[27-Apr-2022 11:46:05 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:46:05 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:46:14 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out
+	Is the server running on host &quot;ec2-63-32-248-14.eu-west-1.compute.amazonaws.com&quot; (63.32.248.14) and accepting
+	TCP/IP connections on port 5432? in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
+[27-Apr-2022 11:46:14 UTC] PHP Notice:  Trying to get property 'error' of non-object in /home/jadocpt/postgisex.jadoc.pt/php/database/db_connect.php on line 6
